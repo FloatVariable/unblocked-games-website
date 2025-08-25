@@ -134,9 +134,8 @@
 <script>
 (() => {
   // ==============================
-  // Config & Global State
+  // Config
   // ==============================
-  // NEW LINK: use the raw GitHub for games2.json
   const DATA_URL = "https://raw.githubusercontent.com/FloatVariable/unblocked-games-website/main/games2.json";
   const LS_FAVS_KEY = "unblocked.favorites.v2";
 
@@ -157,15 +156,14 @@
   let iframeSrcPending = "";
 
   // ==============================
-  // Utilities
+  // Helpers
   // ==============================
   const escapeHtml = (s="") => String(s).replace(/[&<>"'`=\/]/g, ch => ({
     "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;","/":"&#x2F;","`":"&#x60;","=":"&#x3D;"
   }[ch]));
 
-  const slugify = s => (s||"")
-      .toString().normalize("NFKD").replace(/[\u0300-\u036F]/g,'')
-      .replace(/[^a-zA-Z0-9]+/g, '-').replace(/(^-|-$)/g,'').toLowerCase();
+  const slugify = s => (s||"").toString().normalize("NFKD").replace(/[\u0300-\u036F]/g,'')
+                    .replace(/[^a-zA-Z0-9]+/g, '-').replace(/(^-|-$)/g,'').toLowerCase();
 
   const debounce = (fn, ms=180) => { let t; return (...a)=>{ clearTimeout(t); t=setTimeout(()=>fn(...a), ms); }; };
 
@@ -175,21 +173,74 @@
     if (!sticky) setTimeout(()=> els.alert.classList.remove("show"), 4000);
   }
 
+  // Turn common GitHub URLs into working GitHub Pages URLs
+  function normalizeGameUrl(u){
+    if (!u) return "";
+    let url = u.trim();
+
+    // Add https if missing scheme
+    if (!/^https?:\/\//i.test(url)) url = "https://" + url;
+
+    try{
+      const p = new URL(url);
+
+      // github.com -> convert /USER/REPO/blob/BRANCH/path -> https://USER.github.io/REPO/path
+      if (p.hostname === "github.com"){
+        const parts = p.pathname.split("/").filter(Boolean);
+        // Expected: [USER, REPO, "blob", BRANCH, ...path]
+        if (parts.length >= 5 && parts[2] === "blob"){
+          const user = parts[0], repo = parts[1];
+          const restPath = parts.slice(4).join("/");
+          let pages = `https://${user}.github.io/${repo}/${restPath}`;
+          if (!/\/[^\/.]+$/i.test(pages)) { // if ends like .../folder (no .ext), ensure slash for index.html
+            pages += "/";
+          }
+          return pages;
+        }
+        // If it's just repo root, prefer the Pages root
+        if (parts.length >= 2){
+          const user = parts[0], repo = parts[1];
+          return `https://${user}.github.io/${repo}/`;
+        }
+      }
+
+      // raw.githubusercontent.com -> convert to Pages
+      if (p.hostname === "raw.githubusercontent.com"){
+        // /USER/REPO/BRANCH/path...
+        const parts = p.pathname.split("/").filter(Boolean);
+        if (parts.length >= 4){
+          const user = parts[0], repo = parts[1];
+          const restPath = parts.slice(3).join("/");
+          let pages = `https://${user}.github.io/${repo}/${restPath}`;
+          if (!/\/[^\/.]+$/i.test(pages)) { pages += "/"; }
+          return pages;
+        }
+      }
+
+      // If it already looks like Pages and ends with a folder, keep trailing slash
+      if (/\.github\.io$/i.test(p.hostname)){
+        if (!/\.[a-z0-9]+$/i.test(p.pathname) && !p.pathname.endsWith("/")){
+          return p.origin + p.pathname + "/" + p.search + p.hash;
+        }
+      }
+
+      return url;
+    }catch{
+      return url; // leave as-is if URL parsing fails
+    }
+  }
+
   // ==============================
-  // Storage (LocalStorage + fallback)
+  // Storage (with fallback)
   // ==============================
   function hasLocalStorage(){
-    try{
-      const k = "__ls_test__"+Date.now();
-      localStorage.setItem(k,"1"); localStorage.removeItem(k);
-      return true;
-    }catch{ return false; }
+    try{ const k = "__ls_test__"+Date.now(); localStorage.setItem(k,"1"); localStorage.removeItem(k); return true; }
+    catch{ return false; }
   }
   const SUPPORTS_LS = hasLocalStorage();
   const memoryFavs = new Set();
 
-  function getFavs(){
-    if (!SUPPORTS_LS) return new Set(memoryFavs);
+  function getFavs(){ if (!SUPPORTS_LS) return new Set(memoryFavs);
     try { return new Set(JSON.parse(localStorage.getItem(LS_FAVS_KEY) || "[]")); }
     catch { return new Set(); }
   }
@@ -197,24 +248,17 @@
     if (!SUPPORTS_LS){ memoryFavs.clear(); for (const v of set) memoryFavs.add(v); return; }
     localStorage.setItem(LS_FAVS_KEY, JSON.stringify([...set]));
   }
-  function toggleFav(slug){
-    const favs = getFavs();
-    favs.has(slug) ? favs.delete(slug) : favs.add(slug);
-    setFavs(favs);
-  }
+  function toggleFav(slug){ const favs = getFavs(); favs.has(slug) ? favs.delete(slug) : favs.add(slug); setFavs(favs); }
 
   // ==============================
-  // Networking (timeout + retry)
+  // Networking
   // ==============================
   async function fetchWithTimeout(url, opts={}, ms=10000){
     const ctrl = new AbortController();
     const t = setTimeout(()=>ctrl.abort(), ms);
-    try{
-      const res = await fetch(url, {...opts, signal: ctrl.signal, cache:"no-store"});
-      return res;
-    } finally { clearTimeout(t); }
+    try{ return await fetch(url, {...opts, signal: ctrl.signal, cache:"no-store"}); }
+    finally{ clearTimeout(t); }
   }
-
   async function robustFetchJson(url, {retries=2, timeout=12000} = {}){
     let lastErr;
     for (let attempt=0; attempt<=retries; attempt++){
@@ -222,11 +266,9 @@
         const res = await fetchWithTimeout(url, {}, timeout);
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
         const text = await res.text();
-        try { return JSON.parse(text); }
-        catch { throw new Error("Invalid JSON from source"); }
+        return JSON.parse(text);
       }catch(err){
-        lastErr = err;
-        await new Promise(r => setTimeout(r, 300 * (attempt+1)));
+        lastErr = err; await new Promise(r => setTimeout(r, 300*(attempt+1)));
       }
     }
     throw lastErr || new Error("Unknown network error");
@@ -246,7 +288,6 @@
       </article>
     `).join("");
   }
-
   function setBusy(b){ els.grid.setAttribute("aria-busy", b ? "true" : "false"); }
 
   async function fetchGames(){
@@ -260,14 +301,13 @@
       ALL_GAMES = rawList.map((g,i)=>{
         const name = g.name || g.title || g.game_name || `Game ${i+1}`;
         const thumb = g.game_image_icon || g.thumbnail || g.image || "";
-        // IMPORTANT: iframe is a URL string in the new format
         const iframeUrl = typeof g.iframe === "string" ? g.iframe.trim() : "";
-        const tags = g.tags || g.category || g.categories || [];
         const slug = g.slug || g["game-id"] || slugify(name);
+        const tags = g.tags || g.category || g.categories || [];
         return {
           name, slug,
           thumb,
-          iframe: iframeUrl, // URL only
+          iframe: normalizeGameUrl(iframeUrl), // normalize here
           tags: Array.isArray(tags) ? tags : String(tags||"").split(/[,\s]+/).filter(Boolean),
         };
       }).filter(g => g.iframe);
@@ -285,7 +325,7 @@
   }
 
   // ==============================
-  // Rendering (Home)
+  // Home view
   // ==============================
   function Card(g, isFav){
     const thumbAttr = g.thumb ? `data-src="${escapeHtml(g.thumb)}"` : "";
@@ -302,7 +342,6 @@
       </article>
     `;
   }
-
   function renderHome(){
     showView("home");
     const favs = getFavs();
@@ -336,7 +375,7 @@
   }
 
   // ==============================
-  // Lazy-loading: thumbnails & iframe
+  // Lazy loaders
   // ==============================
   let imgObserver;
   function startImageObserver(){
@@ -372,7 +411,7 @@
   }
 
   // ==============================
-  // Rendering (Play)
+  // Play view
   // ==============================
   function renderPlay(slug){
     const game = ALL_GAMES.find(g => g.slug === slug);
@@ -381,11 +420,15 @@
     showView("play");
     els.playTitle.textContent = game.name;
 
-    // Ensure iframe URL is clean and absolute-ish
     const url = (game.iframe || "").trim();
     els.openNewTab.href = url || "#";
 
-    // Favorite toggle
+    // Hint users if a GitHub-style path may still be invalid
+    if (/github\.com|raw\.githubusercontent\.com/i.test(url)){
+      showAlert("Heads up: GitHub links must be published via GitHub Pages to play. If you see a 404, make sure the path exists on USER.github.io/REPO/.", false);
+    }
+
+    // Favorite
     const favs = getFavs();
     const favActive = favs.has(slug);
     els.favPlayBtn.textContent = favActive ? "★ Favorited" : "☆ Favorite";
@@ -397,7 +440,7 @@
       els.favPlayBtn.setAttribute("aria-pressed", active ? "true" : "false");
     };
 
-    // Defer iframe load; source is a URL (not a tag)
+    // Lazy-load iframe
     els.gameFrame.removeAttribute("src");
     iframeSrcPending = url;
     els.frameNote.hidden = true;
@@ -423,7 +466,6 @@
     els.playView.hidden = isHome;
     if (isHome) els.search?.focus();
   }
-
   function parseHash(){
     const raw = location.hash || "#/";
     const parts = raw.split("/");
@@ -431,7 +473,6 @@
     if (parts[1] === "play" && parts[2]) return {route:"play", slug: decodeURIComponent(parts[2])};
     return {route:"home"};
   }
-
   function onRoute(){
     const r = parseHash();
     if (r.route === "home") renderHome();
@@ -439,7 +480,7 @@
   }
 
   // ==============================
-  // Events & Startup
+  // Start
   // ==============================
   els.refreshBtn.addEventListener("click", fetchGames);
   els.filterFavs.addEventListener("change", ()=>{ FILTER.favOnly = !!els.filterFavs.checked; renderHome(); });
@@ -447,7 +488,6 @@
   window.addEventListener("hashchange", onRoute);
 
   fetchGames().then(onRoute);
-
 })();
 </script>
 </body>
