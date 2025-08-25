@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Unblocked Games</title>
+
+<!-- SEO -->
+<meta name="description" content="Play a curated list of unblocked games in your browser. Search, favorite, and launch instantly." />
+<meta name="keywords" content="unblocked games, web games, browser games, school, arcade, free games" />
+<link rel="canonical" href="https://example.com/" />
+<meta property="og:title" content="Unblocked Games" />
+<meta property="og:description" content="Search, favorite, and play unblocked games instantly." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='100%25' height='100%25' fill='%230b0d10'/%3E%3Ctext x='50%25' y='52%25' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='64' font-family='Segoe UI, Roboto, Helvetica, Arial'%3EUnblocked Games%3C/text%3E%3C/svg%3E" />
+<meta name="color-scheme" content="dark light" />
+
+<style>
+  :root{
+    --bg: #0b0d10; --panel:#12151a; --panel-2:#171b22; --text:#e9eef5; --muted:#9aa4b2;
+    --accent:#4f8cff; --accent-2:#7aa2ff; --card:#0f1318; --border:#222833;
+    --radius: 16px; --shadow: 0 10px 30px rgba(0,0,0,.35);
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f6f8fb; --panel:#ffffff; --panel-2:#f3f6fb; --card:#ffffff; --text:#0d1218; --muted:#485465; --border:#e6eaf2; --shadow: 0 10px 30px rgba(12,31,67,.08); }
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji;
+    background: radial-gradient(1200px 800px at 20% -10%, rgba(79,140,255,.12), transparent 60%),
+                radial-gradient(1000px 700px at 120% 10%, rgba(122,162,255,.10), transparent 60%), var(--bg);
+    color:var(--text);
+  }
+
+  .shell{max-width:1200px; margin:0 auto; padding:24px}
+  header{position:sticky; top:0; z-index:10; backdrop-filter:saturate(1.1) blur(8px); background: color-mix(in oklab, var(--bg) 70%, transparent); border-bottom:1px solid var(--border);}
+  .topbar{display:flex; gap:12px; align-items:center; max-width:1200px; margin:0 auto; padding:14px 24px;}
+  .brand{display:flex; align-items:center; gap:12px; text-decoration:none; color:inherit}
+  .logo{width:36px; height:36px; border-radius:10px; background: conic-gradient(from 200deg at 50% 50%, var(--accent), var(--accent-2)); box-shadow: var(--shadow);}
+  h1{font-size:18px; margin:0; letter-spacing:.2px}
+  .grow{flex:1}
+  .btn{appearance:none; border:1px solid var(--border); background:var(--panel); color:var(--text); padding:10px 14px; border-radius:12px; cursor:pointer; font-weight:600; transition:.15s transform ease, .2s background ease, .2s border-color ease;}
+  .btn:hover{transform:translateY(-1px); border-color: color-mix(in oklab, var(--accent) 40%, var(--border))}
+  .btn.primary{background:linear-gradient(180deg, var(--accent), var(--accent-2)); color:white; border-color:transparent}
+  .btn.ghost{background:var(--panel-2)}
+  .pill{font-size:12px; color:var(--muted); border:1px solid var(--border); background:var(--panel-2); padding:6px 10px; border-radius:999px;}
+  .toggle{display:flex; align-items:center; gap:8px}
+  .toggle input{accent-color:var(--accent); width:18px; height:18px}
+
+  /* Alert banner for errors */
+  .alert{display:none; place-items:center; gap:10px; border:1px solid #6b2d2d; background:#2a1515; color:#ffd2d2; padding:10px 14px; border-radius:12px; margin:12px 0;}
+  .alert.show{display:grid}
+
+  .searchbar{display:flex; gap:10px; align-items:center; background:var(--panel); padding:12px 14px; border-radius:14px; border:1px solid var(--border); box-shadow: var(--shadow);}
+  .searchbar input{flex:1; background:transparent; border:none; outline:none; color:var(--text); font-size:16px;}
+
+  .grid{display:grid; grid-template-columns: repeat( auto-fill, minmax(180px, 1fr)); gap:16px; margin-top:18px}
+  .card{background:var(--card); border:1px solid var(--border); border-radius:14px; overflow:hidden; display:flex; flex-direction:column; min-height:240px; position:relative; transition: transform .12s ease, box-shadow .2s ease, border-color .2s ease;}
+  .card:hover{transform:translateY(-2px); box-shadow: var(--shadow); border-color: color-mix(in oklab, var(--accent) 35%, var(--border))}
+  .thumb{aspect-ratio:16/9; background:linear-gradient(180deg, #222, #111); display:block; position:relative}
+  .thumb img{width:100%; height:100%; object-fit:cover; display:block}
+  .card-body{padding:12px; display:flex; gap:10px; align-items:center}
+  .title{font-weight:700; font-size:14px; line-height:1.2; flex:1}
+  .fav{border:none; background:transparent; color:var(--muted); cursor:pointer; font-size:18px}
+  .fav.active{color:gold}
+  .empty{padding:36px; text-align:center; border:1px dashed var(--border); border-radius:16px; color:var(--muted); background:var(--panel-2)}
+  .play-wrap{margin-top:18px; display:flex; flex-direction:column; gap:12px}
+  .frame-wrap{background:var(--panel); border:1px solid var(--border); border-radius:16px; overflow:hidden; box-shadow: var(--shadow);}
+  .frame-wrap iframe{display:block; width:100%; height:min(78vh, 900px); background:#000}
+  .meta{display:flex; gap:10px; align-items:center; flex-wrap:wrap}
+  .crumbs{color:var(--muted); font-size:14px}
+  .crumbs a{color:inherit; text-decoration:none}
+  .crumbs a:hover{color:var(--text); text-decoration:underline}
+
+  .skeleton{background: linear-gradient(100deg, color-mix(in oklab, var(--panel) 85%, #fff 0%), color-mix(in oklab, var(--panel-2) 85%, #fff 0%), color-mix(in oklab, var(--panel) 85%, #fff 0%)); background-size: 200% 100%; animation: pulse 1.1s linear infinite;}
+  @keyframes pulse{0%{background-position:200% 0}100%{background-position:-200% 0}}
+  @media (max-width:640px){.topbar{padding:12px 16px}.shell{padding:16px}}
+</style>
+</head>
+<body>
+  <header>
+    <div class="topbar" role="navigation" aria-label="Primary">
+      <a href="#/" class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <h1>Unblocked Games</h1>
+      </a>
+      <div class="grow"></div>
+      <label class="toggle" title="Show favorites only">
+        <input type="checkbox" id="filterFavs" />
+        <span class="pill">Favorites</span>
+      </label>
+      <button class="btn ghost" id="refreshBtn" title="Reload games">↻ Reload</button>
+      <a class="btn primary" href="#/">Browse</a>
+    </div>
+  </header>
+
+  <main class="shell">
+    <!-- Error banner (network/JSON) -->
+    <div id="alert" class="alert" role="status" aria-live="polite">⚠️ <span id="alertMsg">An error occurred.</span></div>
+
+    <!-- Browse view -->
+    <section id="homeView" hidden>
+      <div class="searchbar" role="search">
+        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10 2a8 8 0 1 1 0 16c-1.85 0-3.55-.63-4.9-1.69L2.71 18.7a1 1 0 1 1-1.41-1.42l2.4-2.4A8 8 0 0 1 10 2m0 2a6 6 0 1 0 0 12A6 6 0 0 0 10 4"/></svg>
+        <input id="searchInput" placeholder="Search games (name, tags)..." autocomplete="off" />
+        <span id="countPill" class="pill">0 games</span>
+      </div>
+      <div id="grid" class="grid" aria-live="polite" aria-busy="true"></div>
+      <div id="emptyState" class="empty" hidden>No results. Try another search.</div>
+    </section>
+
+    <!-- Play view -->
+    <section id="playView" hidden>
+      <nav class="meta">
+        <div class="crumbs">← <a href="#/">Back to all games</a></div>
+        <div class="grow"></div>
+        <a id="openNewTab" class="btn" target="_blank" rel="noopener">Open in new tab</a>
+        <button id="favPlayBtn" class="btn">☆ Favorite</button>
+        <button id="manualLoadBtn" class="btn ghost" aria-controls="gameFrame">Load game</button>
+      </nav>
+      <div class="play-wrap">
+        <h2 id="playTitle" style="margin:4px 2px 2px 2px;"></h2>
+        <div class="frame-wrap">
+          <!-- Note: src set lazily via IntersectionObserver or the manual button -->
+          <iframe id="gameFrame" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" referrerpolicy="no-referrer" title="Game"></iframe>
+        </div>
+        <div id="frameNote" class="empty" hidden>
+          If the game doesn’t load here (embed blocked), click “Open in new tab”.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Data source: <code>swarmintelli/Unblocked-Games-CDN</code>. Thumbnails and iframes load from their respective hosts.
+  </footer>
+
+<script>
+(() => {
+  // ==============================
+  // Config & Global State
+  // ==============================
+  const DATA_URL = "https://raw.githubusercontent.com/swarmintelli/Unblocked-Games-CDN/main/games.json";
+  const LS_FAVS_KEY = "unblocked.favorites.v2"; // v2 in case users upgrade from older version
+
+  // DOM helpers
+  const $ = sel => document.querySelector(sel);
+  const els = {
+    alert: $("#alert"), alertMsg: $("#alertMsg"),
+    homeView: $("#homeView"), playView: $("#playView"),
+    grid: $("#grid"), empty: $("#emptyState"),
+    search: $("#searchInput"), count: $("#countPill"),
+    filterFavs: $("#filterFavs"), refreshBtn: $("#refreshBtn"),
+    playTitle: $("#playTitle"), gameFrame: $("#gameFrame"),
+    frameNote: $("#frameNote"), openNewTab: $("#openNewTab"),
+    favPlayBtn: $("#favPlayBtn"), manualLoadBtn: $("#manualLoadBtn"),
+  };
+
+  /** App data */
+  let ALL_GAMES = [];           // normalized game objects
+  let FILTER = { q:"", favOnly:false };
+  let iframeSrcPending = "";    // deferred iframe src for lazy loading
+
+  // ==============================
+  // Utilities
+  // ==============================
+  const escapeHtml = (s="") => String(s).replace(/[&<>"'`=\/]/g, ch => ({
+    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;","/":"&#x2F;","`":"&#x60;","=":"&#x3D;"
+  }[ch]));
+
+  const slugify = s => (s||"")
+      .toString().normalize("NFKD").replace(/[\u0300-\u036F]/g,'')
+      .replace(/[^a-zA-Z0-9]+/g, '-').replace(/(^-|-$)/g,'').toLowerCase();
+
+  // Debounce helper for search input
+  const debounce = (fn, ms=180) => { let t; return (...a)=>{ clearTimeout(t); t=setTimeout(()=>fn(...a), ms); }; };
+
+  // Show a top alert banner (auto-hides after a few seconds unless sticky)
+  function showAlert(msg, sticky=false){
+    els.alertMsg.textContent = msg;
+    els.alert.classList.add("show");
+    if (!sticky) setTimeout(()=> els.alert.classList.remove("show"), 4000);
+  }
+
+  // ==============================
+  // Storage (Local Storage with fallback)
+  // ==============================
+  function hasLocalStorage(){
+    try{
+      const k = "__ls_test__"+Date.now();
+      localStorage.setItem(k,"1"); localStorage.removeItem(k);
+      return true;
+    }catch{ return false; }
+  }
+  const SUPPORTS_LS = hasLocalStorage();
+  const memoryFavs = new Set(); // fallback in-memory favorites
+
+  function getFavs(){
+    if (!SUPPORTS_LS) return new Set(memoryFavs);
+    try { return new Set(JSON.parse(localStorage.getItem(LS_FAVS_KEY) || "[]")); }
+    catch { return new Set(); }
+  }
+  function setFavs(set){
+    if (!SUPPORTS_LS){
+      memoryFavs.clear(); for (const v of set) memoryFavs.add(v);
+      return;
+    }
+    localStorage.setItem(LS_FAVS_KEY, JSON.stringify([...set]));
+  }
+  function toggleFav(slug){
+    const favs = getFavs();
+    favs.has(slug) ? favs.delete(slug) : favs.add(slug);
+    setFavs(favs);
+  }
+
+  // ==============================
+  // Networking with timeouts & retries
+  // ==============================
+  /**
+   * fetchWithTimeout: fetch with AbortController timeout
+   */
+  async function fetchWithTimeout(url, opts={}, ms=10000){
+    const ctrl = new AbortController();
+    const t = setTimeout(()=>ctrl.abort(), ms);
+    try{
+      const res = await fetch(url, {...opts, signal: ctrl.signal, cache:"no-store"});
+      return res;
+    } finally {
+      clearTimeout(t);
+    }
+  }
+
+  /**
+   * robustFetchJson: handles HTTP errors, JSON parsing, and retry
+   */
+  async function robustFetchJson(url, {retries=2, timeout=10000} = {}){
+    let lastErr;
+    for (let attempt=0; attempt<=retries; attempt++){
+      try{
+        const res = await fetchWithTimeout(url, {}, timeout);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        // Defensive: some hosts return invalid JSON on rate limit or error
+        const text = await res.text();
+        try{
+          const data = JSON.parse(text);
+          return data;
+        }catch(parseErr){
+          throw new Error("Invalid JSON from source");
+        }
+      }catch(err){
+        lastErr = err;
+        // brief backoff
+        await new Promise(r => setTimeout(r, 300 * (attempt+1)));
+      }
+    }
+    throw lastErr || new Error("Unknown network error");
+  }
+
+  // ==============================
+  // Data load & normalization
+  // ==============================
+  function skeletonCards(n=12){
+    return Array.from({length:n}).map(()=>`
+      <article class="card">
+        <div class="thumb skeleton"></div>
+        <div class="card-body">
+          <div class="title skeleton" style="height:16px; width:70%"></div>
+          <div class="pill skeleton" style="height:22px; width:60px"></div>
+        </div>
+      </article>
+    `).join("");
+  }
+
+  function setBusy(b){ els.grid.setAttribute("aria-busy", b ? "true" : "false"); }
+
+  async function fetchGames(){
+    setBusy(true);
+    els.grid.innerHTML = skeletonCards(12);
+    try{
+      const json = await robustFetchJson(DATA_URL, {retries:2, timeout:12000});
+      const rawList = Array.isArray(json) ? json
+                    : Array.isArray(json?.games) ? json.games
+                    : Object.values(json || {});
+      ALL_GAMES = rawList.map((g,i)=>{
+        const name = g.name || g.title || g.game_name || `Game ${i+1}`;
+        const thumb = g.game_image_icon || g.thumbnail || g.image || "";
+        const iframe = g.iframe || g.embed || g.url || "";
+        const tags = g.tags || g.category || g.categories || [];
+        const slug = g.slug || slugify(name);
+        return {
+          name, slug,
+          thumb,      // may be empty; handled in renderer
+          iframe,     // may 403 in iframe due to XFO/CSP; handled via note/new tab
+          tags: Array.isArray(tags) ? tags : String(tags||"").split(/[,\s]+/).filter(Boolean),
+        };
+      }).filter(g => g.iframe);
+      renderHome();
+      if (!SUPPORTS_LS) showAlert("Local storage unavailable; favorites won't persist after reload.", true);
+    }catch(err){
+      console.error(err);
+      els.grid.innerHTML = "";
+      els.empty.hidden = false;
+      showAlert("Couldn't load games. Check connection or try again.");
+    }finally{
+      setBusy(false);
+    }
+  }
+
+  // ==============================
+  // Rendering (Home)
+  // ==============================
+  function Card(g, isFav){
+    // Use data-src for lazy image loading; actual src set by IntersectionObserver
+    const thumbAttr = g.thumb ? `data-src="${escapeHtml(g.thumb)}"` : "";
+    return `
+      <article class="card" tabindex="0" aria-labelledby="t-${g.slug}">
+        <button class="thumb" data-action="play" data-slug="${g.slug}" title="Play ${escapeHtml(g.name)}">
+          ${g.thumb ? `<img loading="lazy" alt="${escapeHtml(g.name)} thumbnail" ${thumbAttr} />` : ""}
+        </button>
+        <div class="card-body">
+          <div class="title" id="t-${g.slug}" title="${escapeHtml(g.name)}">${escapeHtml(g.name)}</div>
+          <button class="fav ${isFav ? "active" : ""}" data-action="fav" data-slug="${g.slug}" aria-pressed="${isFav}" title="Toggle favorite">${isFav ? "★" : "☆"}</button>
+          <button class="btn" data-action="play" data-slug="${g.slug}" aria-label="Play ${escapeHtml(g.name)}">Play</button>
+        </div>
+      </article>
+    `;
+  }
+
+  function renderHome(){
+    showView("home");
+    const favs = getFavs();
+    const q = (FILTER.q||"").trim().toLowerCase();
+    const list = ALL_GAMES.filter(g=>{
+      const matchesQ = !q || g.name.toLowerCase().includes(q) || g.tags.some(t=> String(t).toLowerCase().includes(q));
+      const matchesFav = !FILTER.favOnly || favs.has(g.slug);
+      return matchesQ && matchesFav;
+    });
+
+    els.count.textContent = `${list.length} game${list.length===1?"":"s"}`;
+    els.empty.hidden = list.length > 0;
+    els.grid.innerHTML = list.map(g => Card(g, favs.has(g.slug))).join("");
+
+    // Wire buttons
+    [...els.grid.querySelectorAll('[data-action="play"]')].forEach(btn=>{
+      btn.addEventListener("click", (e)=>{
+        const slug = e.currentTarget.getAttribute("data-slug");
+        location.hash = `#/play/${encodeURIComponent(slug)}`;
+      });
+    });
+    [...els.grid.querySelectorAll('[data-action="fav"]')].forEach(btn=>{
+      btn.addEventListener("click", (e)=>{
+        e.stopPropagation();
+        const slug = e.currentTarget.getAttribute("data-slug");
+        toggleFav(slug);
+        renderHome(); // rerender to reflect state/filter
+      });
+    });
+
+    // Start lazy loading thumbnails
+    startImageObserver();
+  }
+
+  // ==============================
+  // Lazy-loading: thumbnails & iframe
+  // ==============================
+  let imgObserver;
+  function startImageObserver(){
+    if (imgObserver) imgObserver.disconnect();
+    const imgs = els.grid.querySelectorAll("img[data-src]");
+    if (!imgs.length) return;
+    imgObserver = new IntersectionObserver((entries, obs)=>{
+      entries.forEach(entry=>{
+        if (entry.isIntersecting){
+          const img = entry.target;
+          img.src = img.dataset.src; // set actual src
+          img.removeAttribute("data-src");
+          obs.unobserve(img);
+        }
+      });
+    }, { rootMargin: "200px 0px" });
+    imgs.forEach(img => imgObserver.observe(img));
+  }
+
+  // Play iframe observer: sets src when iframe enters viewport
+  let frameObserver;
+  function startFrameObserver(){
+    if (frameObserver) frameObserver.disconnect();
+    frameObserver = new IntersectionObserver((entries, obs)=>{
+      entries.forEach(e=>{
+        if (e.isIntersecting && iframeSrcPending){
+          els.gameFrame.src = iframeSrcPending;
+          iframeSrcPending = "";
+          obs.disconnect();
+        }
+      });
+    }, { rootMargin: "0px 0px 200px 0px", threshold: 0.01 });
+    frameObserver.observe(els.gameFrame);
+  }
+
+  // ==============================
+  // Rendering (Play)
+  // ==============================
+  function renderPlay(slug){
+    const game = ALL_GAMES.find(g => g.slug === slug);
+    if (!game){ location.hash = "#/"; return; }
+
+    showView("play");
+    els.playTitle.textContent = game.name;
+    els.openNewTab.href = game.iframe;
+
+    // Favorite button wiring
+    const favs = getFavs();
+    const favActive = favs.has(slug);
+    els.favPlayBtn.textContent = favActive ? "★ Favorited" : "☆ Favorite";
+    els.favPlayBtn.setAttribute("aria-pressed", favActive ? "true" : "false");
+    els.favPlayBtn.onclick = ()=>{
+      toggleFav(slug);
+      const active = getFavs().has(slug);
+      els.favPlayBtn.textContent = active ? "★ Favorited" : "☆ Favorite";
+      els.favPlayBtn.setAttribute("aria-pressed", active ? "true" : "false");
+    };
+
+    // Defer iframe load: set pending src and let IntersectionObserver load it
+    els.gameFrame.removeAttribute("src");
+    iframeSrcPending = game.iframe;
+    els.frameNote.hidden = true;
+
+    // Manual load button (in case observer is unsupported or user prefers immediate load)
+    els.manualLoadBtn.onclick = ()=>{
+      if (iframeSrcPending){
+        els.gameFrame.src = iframeSrcPending; iframeSrcPending = "";
+      }
+    };
+
+    // Start observer to auto-load when in view
+    startFrameObserver();
+
+    // Best-effort hint if iframe fails due to XFO/CSP
+    const t = setTimeout(()=>{ els.frameNote.hidden = false; }, 3500);
+    els.gameFrame.addEventListener("load", ()=>{ clearTimeout(t); els.frameNote.hidden = true; }, {once:true});
+  }
+
+  // ==============================
+  // Router
+  // ==============================
+  function showView(which){
+    const isHome = which === "home";
+    els.homeView.hidden = !isHome;
+    els.playView.hidden = isHome;
+    if (isHome) els.search?.focus();
+  }
+
+  function parseHash(){
+    const raw = location.hash || "#/";
+    const parts = raw.split("/");
+    if (parts[1] === "") return {route:"home"};
+    if (parts[1] === "play" && parts[2]) return {route:"play", slug: decodeURIComponent(parts[2])};
+    return {route:"home"};
+  }
+
+  function onRoute(){
+    const r = parseHash();
+    if (r.route === "home") renderHome();
+    else if (r.route === "play") renderPlay(r.slug);
+  }
+
+  // ==============================
+  // Events & Startup
+  // ==============================
+  els.refreshBtn.addEventListener("click", fetchGames);
+  els.filterFavs.addEventListener("change", ()=>{ FILTER.favOnly = !!els.filterFavs.checked; renderHome(); });
+  els.search.addEventListener("input", debounce(()=>{ FILTER.q = els.search.value || ""; renderHome(); }, 120));
+  window.addEventListener("hashchange", onRoute);
+
+  // Initial load
+  fetchGames().then(onRoute);
+
+})();
+</script>
+</body>
+</html>
