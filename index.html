@@ -97,6 +97,7 @@
   <main class="shell">
     <div id="alert" class="alert" role="status" aria-live="polite">⚠️ <span id="alertMsg">An error occurred.</span></div>
 
+    <!-- Browse view -->
     <section id="homeView" hidden>
       <div class="searchbar" role="search">
         <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10 2a8 8 0 1 1 0 16c-1.85 0-3.55-.63-4.9-1.69L2.71 18.7a1 1 0 1 1-1.41-1.42l2.4-2.4A8 8 0 0 1 10 2m0 2a6 6 0 1 0 0 12A6 6 0 0 0 10 4"/></svg>
@@ -107,21 +108,24 @@
       <div id="emptyState" class="empty" hidden>No results. Try another search.</div>
     </section>
 
+    <!-- Play view -->
     <section id="playView" hidden>
       <nav class="meta">
         <div class="crumbs">← <a href="#/">Back to all games</a></div>
         <div class="grow"></div>
-        <a id="openNewTab" class="btn" target="_blank" rel="noopener">Open in new tab</a>
+        <!-- Fullscreen replaces open-in-new-tab -->
+        <button id="fullscreenBtn" class="btn">⛶ Fullscreen</button>
         <button id="favPlayBtn" class="btn">☆ Favorite</button>
         <button id="manualLoadBtn" class="btn ghost" aria-controls="gameFrame">Load game</button>
       </nav>
       <div class="play-wrap">
         <h2 id="playTitle" style="margin:4px 2px 2px 2px;"></h2>
         <div class="frame-wrap">
+          <!-- The page embed (lazy src assigned via JS) -->
           <iframe id="gameFrame" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" referrerpolicy="no-referrer" title="Game"></iframe>
         </div>
         <div id="frameNote" class="empty" hidden>
-          If the game doesn’t load here (embed blocked), click “Open in new tab”.
+          If the game doesn’t load here (embed blocked), use the fullscreen button.
         </div>
       </div>
     </section>
@@ -137,7 +141,7 @@
   // Config
   // ==============================
   const DATA_URL = "https://raw.githubusercontent.com/FloatVariable/unblocked-games-website/main/games2.json";
-  const LS_FAVS_KEY = "unblocked.favorites.v2";
+  const LS_FAVS_KEY = "unblocked.favorites.v3";
 
   const $ = sel => document.querySelector(sel);
   const els = {
@@ -147,8 +151,8 @@
     search: $("#searchInput"), count: $("#countPill"),
     filterFavs: $("#filterFavs"), refreshBtn: $("#refreshBtn"),
     playTitle: $("#playTitle"), gameFrame: $("#gameFrame"),
-    frameNote: $("#frameNote"), openNewTab: $("#openNewTab"),
-    favPlayBtn: $("#favPlayBtn"), manualLoadBtn: $("#manualLoadBtn"),
+    frameNote: $("#frameNote"), manualLoadBtn: $("#manualLoadBtn"),
+    favPlayBtn: $("#favPlayBtn"), fullscreenBtn: $("#fullscreenBtn"),
   };
 
   let ALL_GAMES = [];
@@ -173,51 +177,42 @@
     if (!sticky) setTimeout(()=> els.alert.classList.remove("show"), 4000);
   }
 
-  // Turn common GitHub URLs into working GitHub Pages URLs
+  // Convert common GitHub viewer/raw URLs to GitHub Pages URLs
   function normalizeGameUrl(u){
     if (!u) return "";
     let url = u.trim();
 
-    // Add https if missing scheme
     if (!/^https?:\/\//i.test(url)) url = "https://" + url;
 
     try{
       const p = new URL(url);
 
-      // github.com -> convert /USER/REPO/blob/BRANCH/path -> https://USER.github.io/REPO/path
       if (p.hostname === "github.com"){
         const parts = p.pathname.split("/").filter(Boolean);
-        // Expected: [USER, REPO, "blob", BRANCH, ...path]
         if (parts.length >= 5 && parts[2] === "blob"){
           const user = parts[0], repo = parts[1];
           const restPath = parts.slice(4).join("/");
           let pages = `https://${user}.github.io/${repo}/${restPath}`;
-          if (!/\/[^\/.]+$/i.test(pages)) { // if ends like .../folder (no .ext), ensure slash for index.html
-            pages += "/";
-          }
+          if (!/\/[^\/.]+$/i.test(pages)) pages += "/";
           return pages;
         }
-        // If it's just repo root, prefer the Pages root
         if (parts.length >= 2){
           const user = parts[0], repo = parts[1];
           return `https://${user}.github.io/${repo}/`;
         }
       }
 
-      // raw.githubusercontent.com -> convert to Pages
       if (p.hostname === "raw.githubusercontent.com"){
-        // /USER/REPO/BRANCH/path...
         const parts = p.pathname.split("/").filter(Boolean);
         if (parts.length >= 4){
           const user = parts[0], repo = parts[1];
           const restPath = parts.slice(3).join("/");
           let pages = `https://${user}.github.io/${repo}/${restPath}`;
-          if (!/\/[^\/.]+$/i.test(pages)) { pages += "/"; }
+          if (!/\/[^\/.]+$/i.test(pages)) pages += "/";
           return pages;
         }
       }
 
-      // If it already looks like Pages and ends with a folder, keep trailing slash
       if (/\.github\.io$/i.test(p.hostname)){
         if (!/\.[a-z0-9]+$/i.test(p.pathname) && !p.pathname.endsWith("/")){
           return p.origin + p.pathname + "/" + p.search + p.hash;
@@ -226,7 +221,7 @@
 
       return url;
     }catch{
-      return url; // leave as-is if URL parsing fails
+      return url;
     }
   }
 
@@ -234,13 +229,14 @@
   // Storage (with fallback)
   // ==============================
   function hasLocalStorage(){
-    try{ const k = "__ls_test__"+Date.now(); localStorage.setItem(k,"1"); localStorage.removeItem(k); return true; }
+    try{ const k="__ls_test__"+Date.now(); localStorage.setItem(k,"1"); localStorage.removeItem(k); return true; }
     catch{ return false; }
   }
   const SUPPORTS_LS = hasLocalStorage();
   const memoryFavs = new Set();
 
-  function getFavs(){ if (!SUPPORTS_LS) return new Set(memoryFavs);
+  function getFavs(){
+    if (!SUPPORTS_LS) return new Set(memoryFavs);
     try { return new Set(JSON.parse(localStorage.getItem(LS_FAVS_KEY) || "[]")); }
     catch { return new Set(); }
   }
@@ -248,7 +244,11 @@
     if (!SUPPORTS_LS){ memoryFavs.clear(); for (const v of set) memoryFavs.add(v); return; }
     localStorage.setItem(LS_FAVS_KEY, JSON.stringify([...set]));
   }
-  function toggleFav(slug){ const favs = getFavs(); favs.has(slug) ? favs.delete(slug) : favs.add(slug); setFavs(favs); }
+  function toggleFav(slug){
+    const favs = getFavs();
+    favs.has(slug) ? favs.delete(slug) : favs.add(slug);
+    setFavs(favs);
+  }
 
   // ==============================
   // Networking
@@ -275,7 +275,7 @@
   }
 
   // ==============================
-  // Data load & normalization
+  // UI helpers
   // ==============================
   function skeletonCards(n=12){
     return Array.from({length:n}).map(()=>`
@@ -290,6 +290,9 @@
   }
   function setBusy(b){ els.grid.setAttribute("aria-busy", b ? "true" : "false"); }
 
+  // ==============================
+  // Data load & normalization
+  // ==============================
   async function fetchGames(){
     setBusy(true);
     els.grid.innerHTML = skeletonCards(12);
@@ -307,7 +310,7 @@
         return {
           name, slug,
           thumb,
-          iframe: normalizeGameUrl(iframeUrl), // normalize here
+          iframe: normalizeGameUrl(iframeUrl),
           tags: Array.isArray(tags) ? tags : String(tags||"").split(/[,\s]+/).filter(Boolean),
         };
       }).filter(g => g.iframe);
@@ -356,6 +359,7 @@
     els.empty.hidden = list.length > 0;
     els.grid.innerHTML = list.map(g => Card(g, favs.has(g.slug))).join("");
 
+    // wire actions
     [...els.grid.querySelectorAll('[data-action="play"]')].forEach(btn=>{
       btn.addEventListener("click", (e)=>{
         const slug = e.currentTarget.getAttribute("data-slug");
@@ -411,7 +415,7 @@
   }
 
   // ==============================
-  // Play view
+  // Play view + Fullscreen
   // ==============================
   function renderPlay(slug){
     const game = ALL_GAMES.find(g => g.slug === slug);
@@ -421,14 +425,31 @@
     els.playTitle.textContent = game.name;
 
     const url = (game.iframe || "").trim();
-    els.openNewTab.href = url || "#";
 
-    // Hint users if a GitHub-style path may still be invalid
-    if (/github\.com|raw\.githubusercontent\.com/i.test(url)){
-      showAlert("Heads up: GitHub links must be published via GitHub Pages to play. If you see a 404, make sure the path exists on USER.github.io/REPO/.", false);
-    }
+    // Fullscreen: open about:blank, inject 100% iframe
+    els.fullscreenBtn.onclick = ()=>{
+      if (!url) return;
+      const w = window.open("about:blank", "_blank");
+      if (!w){ alert("Please allow popups for fullscreen."); return; }
+      w.document.write(`<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>${escapeHtml(game.name)}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html,body{margin:0;height:100%;background:#000;overflow:hidden;}
+    iframe{border:0;width:100%;height:100%;}
+  </style>
+</head>
+<body>
+  <iframe src="${url}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="no-referrer"></iframe>
+</body>
+</html>`);
+      w.document.close();
+    };
 
-    // Favorite
+    // Favorite toggle
     const favs = getFavs();
     const favActive = favs.has(slug);
     els.favPlayBtn.textContent = favActive ? "★ Favorited" : "☆ Favorite";
@@ -440,7 +461,7 @@
       els.favPlayBtn.setAttribute("aria-pressed", active ? "true" : "false");
     };
 
-    // Lazy-load iframe
+    // Lazy-load the on-page iframe
     els.gameFrame.removeAttribute("src");
     iframeSrcPending = url;
     els.frameNote.hidden = true;
@@ -453,6 +474,7 @@
 
     startFrameObserver();
 
+    // Show hint if embed is blocked and load doesn't fire quickly
     const t = setTimeout(()=>{ els.frameNote.hidden = false; }, 3500);
     els.gameFrame.addEventListener("load", ()=>{ clearTimeout(t); els.frameNote.hidden = true; }, {once:true});
   }
