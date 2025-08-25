@@ -48,7 +48,6 @@
   .toggle{display:flex; align-items:center; gap:8px}
   .toggle input{accent-color:var(--accent); width:18px; height:18px}
 
-  /* Alert banner for errors */
   .alert{display:none; place-items:center; gap:10px; border:1px solid #6b2d2d; background:#2a1515; color:#ffd2d2; padding:10px 14px; border-radius:12px; margin:12px 0;}
   .alert.show{display:grid}
 
@@ -96,10 +95,8 @@
   </header>
 
   <main class="shell">
-    <!-- Error banner (network/JSON) -->
     <div id="alert" class="alert" role="status" aria-live="polite">⚠️ <span id="alertMsg">An error occurred.</span></div>
 
-    <!-- Browse view -->
     <section id="homeView" hidden>
       <div class="searchbar" role="search">
         <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M10 2a8 8 0 1 1 0 16c-1.85 0-3.55-.63-4.9-1.69L2.71 18.7a1 1 0 1 1-1.41-1.42l2.4-2.4A8 8 0 0 1 10 2m0 2a6 6 0 1 0 0 12A6 6 0 0 0 10 4"/></svg>
@@ -110,7 +107,6 @@
       <div id="emptyState" class="empty" hidden>No results. Try another search.</div>
     </section>
 
-    <!-- Play view -->
     <section id="playView" hidden>
       <nav class="meta">
         <div class="crumbs">← <a href="#/">Back to all games</a></div>
@@ -122,7 +118,6 @@
       <div class="play-wrap">
         <h2 id="playTitle" style="margin:4px 2px 2px 2px;"></h2>
         <div class="frame-wrap">
-          <!-- Note: src set lazily via IntersectionObserver or the manual button -->
           <iframe id="gameFrame" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" referrerpolicy="no-referrer" title="Game"></iframe>
         </div>
         <div id="frameNote" class="empty" hidden>
@@ -133,7 +128,7 @@
   </main>
 
   <footer>
-    Data source: <code>swarmintelli/Unblocked-Games-CDN</code>. Thumbnails and iframes load from their respective hosts.
+    Data source: <code>FloatVariable/unblocked-games-website</code>. Thumbnails and iframes load from their respective hosts.
   </footer>
 
 <script>
@@ -141,10 +136,10 @@
   // ==============================
   // Config & Global State
   // ==============================
-  const DATA_URL = "https://raw.githubusercontent.com/swarmintelli/Unblocked-Games-CDN/main/games.json";
-  const LS_FAVS_KEY = "unblocked.favorites.v2"; // v2 in case users upgrade from older version
+  // NEW LINK: use the raw GitHub for games2.json
+  const DATA_URL = "https://raw.githubusercontent.com/FloatVariable/unblocked-games-website/main/games2.json";
+  const LS_FAVS_KEY = "unblocked.favorites.v2";
 
-  // DOM helpers
   const $ = sel => document.querySelector(sel);
   const els = {
     alert: $("#alert"), alertMsg: $("#alertMsg"),
@@ -157,10 +152,9 @@
     favPlayBtn: $("#favPlayBtn"), manualLoadBtn: $("#manualLoadBtn"),
   };
 
-  /** App data */
-  let ALL_GAMES = [];           // normalized game objects
+  let ALL_GAMES = [];
   let FILTER = { q:"", favOnly:false };
-  let iframeSrcPending = "";    // deferred iframe src for lazy loading
+  let iframeSrcPending = "";
 
   // ==============================
   // Utilities
@@ -173,10 +167,8 @@
       .toString().normalize("NFKD").replace(/[\u0300-\u036F]/g,'')
       .replace(/[^a-zA-Z0-9]+/g, '-').replace(/(^-|-$)/g,'').toLowerCase();
 
-  // Debounce helper for search input
   const debounce = (fn, ms=180) => { let t; return (...a)=>{ clearTimeout(t); t=setTimeout(()=>fn(...a), ms); }; };
 
-  // Show a top alert banner (auto-hides after a few seconds unless sticky)
   function showAlert(msg, sticky=false){
     els.alertMsg.textContent = msg;
     els.alert.classList.add("show");
@@ -184,7 +176,7 @@
   }
 
   // ==============================
-  // Storage (Local Storage with fallback)
+  // Storage (LocalStorage + fallback)
   // ==============================
   function hasLocalStorage(){
     try{
@@ -194,7 +186,7 @@
     }catch{ return false; }
   }
   const SUPPORTS_LS = hasLocalStorage();
-  const memoryFavs = new Set(); // fallback in-memory favorites
+  const memoryFavs = new Set();
 
   function getFavs(){
     if (!SUPPORTS_LS) return new Set(memoryFavs);
@@ -202,10 +194,7 @@
     catch { return new Set(); }
   }
   function setFavs(set){
-    if (!SUPPORTS_LS){
-      memoryFavs.clear(); for (const v of set) memoryFavs.add(v);
-      return;
-    }
+    if (!SUPPORTS_LS){ memoryFavs.clear(); for (const v of set) memoryFavs.add(v); return; }
     localStorage.setItem(LS_FAVS_KEY, JSON.stringify([...set]));
   }
   function toggleFav(slug){
@@ -215,42 +204,28 @@
   }
 
   // ==============================
-  // Networking with timeouts & retries
+  // Networking (timeout + retry)
   // ==============================
-  /**
-   * fetchWithTimeout: fetch with AbortController timeout
-   */
   async function fetchWithTimeout(url, opts={}, ms=10000){
     const ctrl = new AbortController();
     const t = setTimeout(()=>ctrl.abort(), ms);
     try{
       const res = await fetch(url, {...opts, signal: ctrl.signal, cache:"no-store"});
       return res;
-    } finally {
-      clearTimeout(t);
-    }
+    } finally { clearTimeout(t); }
   }
 
-  /**
-   * robustFetchJson: handles HTTP errors, JSON parsing, and retry
-   */
-  async function robustFetchJson(url, {retries=2, timeout=10000} = {}){
+  async function robustFetchJson(url, {retries=2, timeout=12000} = {}){
     let lastErr;
     for (let attempt=0; attempt<=retries; attempt++){
       try{
         const res = await fetchWithTimeout(url, {}, timeout);
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        // Defensive: some hosts return invalid JSON on rate limit or error
         const text = await res.text();
-        try{
-          const data = JSON.parse(text);
-          return data;
-        }catch(parseErr){
-          throw new Error("Invalid JSON from source");
-        }
+        try { return JSON.parse(text); }
+        catch { throw new Error("Invalid JSON from source"); }
       }catch(err){
         lastErr = err;
-        // brief backoff
         await new Promise(r => setTimeout(r, 300 * (attempt+1)));
       }
     }
@@ -278,23 +253,25 @@
     setBusy(true);
     els.grid.innerHTML = skeletonCards(12);
     try{
-      const json = await robustFetchJson(DATA_URL, {retries:2, timeout:12000});
+      const json = await robustFetchJson(DATA_URL);
       const rawList = Array.isArray(json) ? json
                     : Array.isArray(json?.games) ? json.games
                     : Object.values(json || {});
       ALL_GAMES = rawList.map((g,i)=>{
         const name = g.name || g.title || g.game_name || `Game ${i+1}`;
         const thumb = g.game_image_icon || g.thumbnail || g.image || "";
-        const iframe = g.iframe || g.embed || g.url || "";
+        // IMPORTANT: iframe is a URL string in the new format
+        const iframeUrl = typeof g.iframe === "string" ? g.iframe.trim() : "";
         const tags = g.tags || g.category || g.categories || [];
-        const slug = g.slug || slugify(name);
+        const slug = g.slug || g["game-id"] || slugify(name);
         return {
           name, slug,
-          thumb,      // may be empty; handled in renderer
-          iframe,     // may 403 in iframe due to XFO/CSP; handled via note/new tab
+          thumb,
+          iframe: iframeUrl, // URL only
           tags: Array.isArray(tags) ? tags : String(tags||"").split(/[,\s]+/).filter(Boolean),
         };
       }).filter(g => g.iframe);
+
       renderHome();
       if (!SUPPORTS_LS) showAlert("Local storage unavailable; favorites won't persist after reload.", true);
     }catch(err){
@@ -311,7 +288,6 @@
   // Rendering (Home)
   // ==============================
   function Card(g, isFav){
-    // Use data-src for lazy image loading; actual src set by IntersectionObserver
     const thumbAttr = g.thumb ? `data-src="${escapeHtml(g.thumb)}"` : "";
     return `
       <article class="card" tabindex="0" aria-labelledby="t-${g.slug}">
@@ -341,7 +317,6 @@
     els.empty.hidden = list.length > 0;
     els.grid.innerHTML = list.map(g => Card(g, favs.has(g.slug))).join("");
 
-    // Wire buttons
     [...els.grid.querySelectorAll('[data-action="play"]')].forEach(btn=>{
       btn.addEventListener("click", (e)=>{
         const slug = e.currentTarget.getAttribute("data-slug");
@@ -353,11 +328,10 @@
         e.stopPropagation();
         const slug = e.currentTarget.getAttribute("data-slug");
         toggleFav(slug);
-        renderHome(); // rerender to reflect state/filter
+        renderHome();
       });
     });
 
-    // Start lazy loading thumbnails
     startImageObserver();
   }
 
@@ -373,7 +347,7 @@
       entries.forEach(entry=>{
         if (entry.isIntersecting){
           const img = entry.target;
-          img.src = img.dataset.src; // set actual src
+          img.src = img.dataset.src;
           img.removeAttribute("data-src");
           obs.unobserve(img);
         }
@@ -382,7 +356,6 @@
     imgs.forEach(img => imgObserver.observe(img));
   }
 
-  // Play iframe observer: sets src when iframe enters viewport
   let frameObserver;
   function startFrameObserver(){
     if (frameObserver) frameObserver.disconnect();
@@ -407,9 +380,12 @@
 
     showView("play");
     els.playTitle.textContent = game.name;
-    els.openNewTab.href = game.iframe;
 
-    // Favorite button wiring
+    // Ensure iframe URL is clean and absolute-ish
+    const url = (game.iframe || "").trim();
+    els.openNewTab.href = url || "#";
+
+    // Favorite toggle
     const favs = getFavs();
     const favActive = favs.has(slug);
     els.favPlayBtn.textContent = favActive ? "★ Favorited" : "☆ Favorite";
@@ -421,22 +397,19 @@
       els.favPlayBtn.setAttribute("aria-pressed", active ? "true" : "false");
     };
 
-    // Defer iframe load: set pending src and let IntersectionObserver load it
+    // Defer iframe load; source is a URL (not a tag)
     els.gameFrame.removeAttribute("src");
-    iframeSrcPending = game.iframe;
+    iframeSrcPending = url;
     els.frameNote.hidden = true;
 
-    // Manual load button (in case observer is unsupported or user prefers immediate load)
     els.manualLoadBtn.onclick = ()=>{
       if (iframeSrcPending){
         els.gameFrame.src = iframeSrcPending; iframeSrcPending = "";
       }
     };
 
-    // Start observer to auto-load when in view
     startFrameObserver();
 
-    // Best-effort hint if iframe fails due to XFO/CSP
     const t = setTimeout(()=>{ els.frameNote.hidden = false; }, 3500);
     els.gameFrame.addEventListener("load", ()=>{ clearTimeout(t); els.frameNote.hidden = true; }, {once:true});
   }
@@ -473,7 +446,6 @@
   els.search.addEventListener("input", debounce(()=>{ FILTER.q = els.search.value || ""; renderHome(); }, 120));
   window.addEventListener("hashchange", onRoute);
 
-  // Initial load
   fetchGames().then(onRoute);
 
 })();
