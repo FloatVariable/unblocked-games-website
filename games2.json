@@ -1,0 +1,2697 @@
+[
+  {
+    "name": "Retro Bowl",
+    "game_url": "https://hfmanor.com/retro-bowl",
+    "game_image_icon": "https://hfmanor.com/image/retro-bowl",
+    "game-id": "retro-bowl",
+    "iframe": "https://hfmanor.com/retro-bowl"
+  },
+  {
+    "name": "Subway Surfers",
+    "game_url": "https://hfmanor.com/subway-surfers",
+    "game_image_icon": "https://hfmanor.com/image/subway-surfers",
+    "game-id": "subway-surfers",
+    "iframe": "https://hfmanor.com/subway-surfers"
+  },
+  {
+    "name": "Basketball Stars",
+    "game_url": "https://hfmanor.com/basketball-stars",
+    "game_image_icon": "https://hfmanor.com/image/basketball-stars",
+    "game-id": "basketball-stars",
+    "iframe": "https://hfmanor.com/basketball-stars"
+  },
+  {
+    "name": "Basket Random",
+    "game_url": "https://hfmanor.com/basket-random",
+    "game_image_icon": "https://hfmanor.com/image/basket-random",
+    "game-id": "basket-random",
+    "iframe": "https://hfmanor.com/basket-random"
+  },
+  {
+    "name": "Stickman Hook",
+    "game_url": "https://hfmanor.com/stickman-hook",
+    "game_image_icon": "https://hfmanor.com/image/stickman-hook",
+    "game-id": "stickman-hook",
+    "iframe": "https://hfmanor.com/stickman-hook"
+  },
+  {
+    "name": "Smash Karts",
+    "game_url": "https://hfmanor.com/Smash Karts",
+    "game_image_icon": "https://hfmanor.com/image/Smash Karts",
+    "game-id": "Smash Karts",
+    "iframe": "https://hfmanor.com/Smash Karts"
+  },
+  {
+    "name": "Cookie Clicker",
+    "game_url": "https://hfmanor.com/cookie-clicker",
+    "game_image_icon": "https://hfmanor.com/image/cookie-clicker",
+    "game-id": "cookie-clicker",
+    "iframe": "https://hfmanor.com/cookie-clicker"
+  },
+  {
+    "name": "Moto X3M",
+    "game_url": "https://hfmanor.com/moto-X3M",
+    "game_image_icon": "https://hfmanor.com/image/moto-X3M",
+    "game-id": "moto-X3M",
+    "iframe": "https://hfmanor.com/moto-X3M"
+  },
+  {
+    "name": "Bitlife",
+    "game_url": "https://hfmanor.com/bitlife",
+    "game_image_icon": "https://hfmanor.com/image/bitlife",
+    "game-id": "bitlife",
+    "iframe": "https://hfmanor.com/bitlife"
+  },
+  {
+    "name": "Superhot",
+    "game_url": "https://hfmanor.com/superhot",
+    "game_image_icon": "https://hfmanor.com/image/superhot",
+    "game-id": "superhot",
+    "iframe": "https://hfmanor.com/superhot"
+  },
+  {
+    "name": "1v1lol",
+    "game_url": "https://hfmanor.com/1v1lol",
+    "game_image_icon": "https://hfmanor.com/image/1v1lol",
+    "game-id": "1v1lol",
+    "iframe": "https://hfmanor.com/1v1lol"
+  },
+  {
+    "name": "Roblox",
+    "game_url": "https://hfmanor.com/roblox",
+    "game_image_icon": "https://hfmanor.com/image/roblox",
+    "game-id": "roblox",
+    "iframe": "https://hfmanor.com/roblox"
+  },
+  {
+    "name": "Among Us",
+    "game_url": "https://hfmanor.com/among-us",
+    "game_image_icon": "https://hfmanor.com/image/among-us",
+    "game-id": "among-us",
+    "iframe": "https://hfmanor.com/among-us"
+  },
+  {
+    "name": "Snow Rider 3D",
+    "game_url": "https://games.mathpapers.org/snowrider3d/index.html",
+    "game_image_icon": "https://hfmanor.com/image/Snow Rider 3D",
+    "game-id": "Snow Rider 3D",
+    "iframe": "https://hfmanor.com/Snow-Rider-3D"
+  },
+  {
+    "name": "Minecraft",
+    "game_url": "https://hfmanor.com/Minecraft",
+    "game_image_icon": "https://hfmanor.com/image/Minecraft",
+    "game-id": "Minecraft",
+    "iframe": "https://hfmanor.com/Minecraft"
+  },
+  {
+    "name": "Soundboard",
+    "game_url": "https://hfmanor.com/soundboard",
+    "game_image_icon": "https://hfmanor.com/image/soundboard",
+    "game-id": "soundboard",
+    "iframe": "https://hfmanor.com/soundboard"
+  },
+  {
+    "name": "Madalin Stunt Cars 2",
+    "game_url": "https://hfmanor.com/madalin-stunt-cars-2",
+    "game_image_icon": "https://hfmanor.com/image/madalin-stunt-cars-2",
+    "game-id": "madalin-stunt-cars-2",
+    "iframe": "https://hfmanor.com/madalin-stunt-cars-2"
+  },
+  {
+    "name": "Deepest Sword",
+    "game_url": "https://hfmanor.com/deepest-sword",
+    "game_image_icon": "https://hfmanor.com/image/deepest-sword",
+    "game-id": "deepest-sword",
+    "iframe": "https://hfmanor.com/deepest-sword"
+  },
+  {
+    "name": "Soccer Skills",
+    "game_url": "https://hfmanor.com/soccer-skills",
+    "game_image_icon": "https://hfmanor.com/image/soccer-skills",
+    "game-id": "soccer-skills",
+    "iframe": "https://hfmanor.com/soccer-skills"
+  },
+  {
+    "name": "Javascript Snake",
+    "game_url": "https://hfmanor.com/javascript-snake",
+    "game_image_icon": "https://hfmanor.com/image/javascript-snake",
+    "game-id": "javascript-snake",
+    "iframe": "https://hfmanor.com/javascript-snake"
+  },
+  {
+    "name": "Basketbros Io",
+    "game_url": "https://hfmanor.com/basketbros-io",
+    "game_image_icon": "https://hfmanor.com/image/basketbros-io",
+    "game-id": "basketbros-io",
+    "iframe": "https://hfmanor.com/basketbros-io"
+  },
+  {
+    "name": "Slitherio",
+    "game_url": "https://hfmanor.com/slitherio",
+    "game_image_icon": "https://hfmanor.com/image/slitherio",
+    "game-id": "slitherio",
+    "iframe": "https://hfmanor.com/slitherio"
+  },
+  {
+    "name": "Fortnite",
+    "game_url": "https://hfmanor.com/fortnite",
+    "game_image_icon": "https://hfmanor.com/image/fortnite",
+    "game-id": "fortnite",
+    "iframe": "https://hfmanor.com/fortnite"
+  },
+  {
+    "name": "Slope 2",
+    "game_url": "https://hfmanor.com/slope-2",
+    "game_image_icon": "https://hfmanor.com/image/slope-2",
+    "game-id": "slope-2",
+    "iframe": "https://hfmanor.com/slope-2"
+  },
+  {
+    "name": "Madalin Stunt Cars 3",
+    "game_url": "https://hfmanor.com/madalin-stunt-cars-3",
+    "game_image_icon": "https://hfmanor.com/image/madalin-stunt-cars-3",
+    "game-id": "madalin-stunt-cars-3",
+    "iframe": "https://hfmanor.com/madalin-stunt-cars-3"
+  },
+  {
+    "name": "Geodash",
+    "game_url": "https://hfmanor.com/geodash",
+    "game_image_icon": "https://hfmanor.com/image/geodash",
+    "game-id": "geodash",
+    "iframe": "https://hfmanor.com/geodash"
+  },
+  {
+    "name": "Stick Duel Battle",
+    "game_url": "https://hfmanor.com/stick-duel-battle",
+    "game_image_icon": "https://hfmanor.com/image/stick-duel-battle",
+    "game-id": "stick-duel-battle",
+    "iframe": "https://hfmanor.com/stick-duel-battle"
+  },
+  {
+    "name": "Getaway Shootout",
+    "game_url": "https://hfmanor.com/getaway-shootout",
+    "game_image_icon": "https://hfmanor.com/image/getaway-shootout",
+    "game-id": "getaway-shootout",
+    "iframe": "https://hfmanor.com/getaway-shootout"
+  },
+  {
+    "name": "Cluster Rush",
+    "game_url": "https://hfmanor.com/cluster-rush",
+    "game_image_icon": "https://hfmanor.com/image/cluster-rush",
+    "game-id": "cluster-rush",
+    "iframe": "https://hfmanor.com/cluster-rush"
+  },
+  {
+    "name": "Tunnel Rush",
+    "game_url": "https://hfmanor.com/tunnel-rush",
+    "game_image_icon": "https://hfmanor.com/image/tunnel-rush",
+    "game-id": "tunnel-rush",
+    "iframe": "https://hfmanor.com/tunnel-rush"
+  },
+  {
+    "name": "Tiny Fishing",
+    "game_url": "https://hfmanor.com/tiny-fishing",
+    "game_image_icon": "https://hfmanor.com/image/tiny-fishing",
+    "game-id": "tiny-fishing",
+    "iframe": "https://hfmanor.com/tiny-fishing"
+  },
+  {
+    "name": "Pixel Gun Survival",
+    "game_url": "https://hfmanor.com/pixel-gun-survival",
+    "game_image_icon": "https://hfmanor.com/image/pixel-gun-survival",
+    "game-id": "pixel-gun-survival",
+    "iframe": "https://hfmanor.com/pixel-gun-survival"
+  },
+  {
+    "name": "Aquapark Slides",
+    "game_url": "https://hfmanor.com/aquapark-slides",
+    "game_image_icon": "https://hfmanor.com/image/aquapark-slides",
+    "game-id": "aquapark-slides",
+    "iframe": "https://hfmanor.com/aquapark-slides"
+  },
+  {
+    "name": "Getting Over It",
+    "game_url": "https://hfmanor.com/getting-over-it",
+    "game_image_icon": "https://hfmanor.com/image/getting-over-it",
+    "game-id": "getting-over-it",
+    "iframe": "https://hfmanor.com/getting-over-it"
+  },
+  {
+    "name": "Rocket League",
+    "game_url": "https://hfmanor.com/Rocket-League",
+    "game_image_icon": "https://hfmanor.com/image/Rocket-League",
+    "game-id": "Rocket-League",
+    "iframe": "https://hfmanor.com/Rocket-League"
+  },
+  {
+    "name": "Doodle Jump",
+    "game_url": "https://hfmanor.com/doodle-jump",
+    "game_image_icon": "https://hfmanor.com/image/doodle-jump",
+    "game-id": "doodle-jump",
+    "iframe": "https://hfmanor.com/doodle-jump"
+  },
+  {
+    "name": "Merge Round Racers",
+    "game_url": "https://hfmanor.com/merge-round-racers",
+    "game_image_icon": "https://hfmanor.com/image/merge-round-racers",
+    "game-id": "merge-round-racers",
+    "iframe": "https://hfmanor.com/merge-round-racers"
+  },
+  {
+    "name": "Bloxors",
+    "game_url": "https://hfmanor.com/bloxors",
+    "game_image_icon": "https://hfmanor.com/image/bloxors",
+    "game-id": "bloxors",
+    "iframe": "https://hfmanor.com/bloxors"
+  },
+  {
+    "name": "Temple Run 2",
+    "game_url": "https://hfmanor.com/temple-run-2",
+    "game_image_icon": "https://hfmanor.com/image/temple-run-2",
+    "game-id": "temple-run-2",
+    "iframe": "https://hfmanor.com/temple-run-2"
+  },
+  {
+    "name": "Google Feud",
+    "game_url": "https://hfmanor.com/google-feud",
+    "game_image_icon": "https://hfmanor.com/image/google-feud",
+    "game-id": "google-feud",
+    "iframe": "https://hfmanor.com/google-feud"
+  },
+  {
+    "name": "Drift Boss",
+    "game_url": "https://hfmanor.com/drift-boss",
+    "game_image_icon": "https://hfmanor.com/image/drift-boss",
+    "game-id": "drift-boss",
+    "iframe": "https://hfmanor.com/drift-boss"
+  },
+  {
+    "name": "Soccer Random",
+    "game_url": "https://hfmanor.com/soccer-random",
+    "game_image_icon": "https://hfmanor.com/image/soccer-random",
+    "game-id": "soccer-random",
+    "iframe": "https://hfmanor.com/soccer-random"
+  },
+  {
+    "name": "Moto X3M Pool",
+    "game_url": "https://hfmanor.com/moto-X3M-pool",
+    "game_image_icon": "https://hfmanor.com/image/moto-X3M-pool",
+    "game-id": "moto-X3M-pool",
+    "iframe": "https://hfmanor.com/moto-X3M-pool"
+  },
+  {
+    "name": "Vex6",
+    "game_url": "https://hfmanor.com/vex6",
+    "game_image_icon": "https://hfmanor.com/image/vex6",
+    "game-id": "vex6",
+    "iframe": "https://hfmanor.com/vex6"
+  },
+  {
+    "name": "Blockpost",
+    "game_url": "https://hfmanor.com/blockpost",
+    "game_image_icon": "https://hfmanor.com/image/blockpost",
+    "game-id": "blockpost",
+    "iframe": "https://hfmanor.com/blockpost"
+  },
+  {
+    "name": "Tanuki Sunset",
+    "game_url": "https://hfmanor.com/tanuki-sunset",
+    "game_image_icon": "https://hfmanor.com/image/tanuki-sunset",
+    "game-id": "tanuki-sunset",
+    "iframe": "https://hfmanor.com/tanuki-sunset"
+  },
+  {
+    "name": "Crossyroad",
+    "game_url": "https://hfmanor.com/crossyroad",
+    "game_image_icon": "https://hfmanor.com/image/crossyroad",
+    "game-id": "crossyroad",
+    "iframe": "https://hfmanor.com/crossyroad"
+  },
+  {
+    "name": "Volley Random",
+    "game_url": "https://hfmanor.com/volley-random",
+    "game_image_icon": "https://hfmanor.com/image/volley-random",
+    "game-id": "volley-random",
+    "iframe": "https://hfmanor.com/volley-random"
+  },
+  {
+    "name": "2048",
+    "game_url": "https://hfmanor.com/2048",
+    "game_image_icon": "https://hfmanor.com/image/2048",
+    "game-id": "2048",
+    "iframe": "https://hfmanor.com/2048"
+  },
+  {
+    "name": "Monster Tracks",
+    "game_url": "https://hfmanor.com/monster-tracks",
+    "game_image_icon": "https://hfmanor.com/image/monster-tracks",
+    "game-id": "monster-tracks",
+    "iframe": "https://hfmanor.com/monster-tracks"
+  },
+  {
+    "name": "Monkey Mart",
+    "game_url": "https://hfmanor.com/Monkey Mart",
+    "game_image_icon": "https://hfmanor.com/image/Monkey Mart",
+    "game-id": "Monkey Mart",
+    "iframe": "https://hfmanor.com/Monkey Mart"
+  },
+  {
+    "name": "Baldis Basics",
+    "game_url": "https://hfmanor.com/baldis-basics",
+    "game_image_icon": "https://hfmanor.com/image/baldis-basics",
+    "game-id": "baldis-basics",
+    "iframe": "https://hfmanor.com/baldis-basics"
+  },
+  {
+    "name": "Worlds Hardest Game 2",
+    "game_url": "https://hfmanor.com/worlds-hardest-game-2",
+    "game_image_icon": "https://hfmanor.com/image/worlds-hardest-game-2",
+    "game-id": "worlds-hardest-game-2",
+    "iframe": "https://hfmanor.com/worlds-hardest-game-2"
+  },
+  {
+    "name": "Krunker",
+    "game_url": "https://hfmanor.com/krunker",
+    "game_image_icon": "https://hfmanor.com/image/krunker",
+    "game-id": "krunker",
+    "iframe": "https://hfmanor.com/krunker"
+  },
+  {
+    "name": "Drive Mad",
+    "game_url": "https://hfmanor.com/drive-mad",
+    "game_image_icon": "https://hfmanor.com/image/drive-mad",
+    "game-id": "drive-mad",
+    "iframe": "https://hfmanor.com/drive-mad"
+  },
+  {
+    "name": "Draw The Hill",
+    "game_url": "https://hfmanor.com/draw-the-hill",
+    "game_image_icon": "https://hfmanor.com/image/draw-the-hill",
+    "game-id": "draw-the-hill",
+    "iframe": "https://hfmanor.com/draw-the-hill"
+  },
+  {
+    "name": "Sm64",
+    "game_url": "https://hfmanor.com/sm64",
+    "game_image_icon": "https://hfmanor.com/image/sm64",
+    "game-id": "sm64",
+    "iframe": "https://hfmanor.com/sm64"
+  },
+  {
+    "name": "Ducklife4",
+    "game_url": "https://hfmanor.com/ducklife4",
+    "game_image_icon": "https://hfmanor.com/image/ducklife4",
+    "game-id": "ducklife4",
+    "iframe": "https://hfmanor.com/ducklife4"
+  },
+  {
+    "name": "Tactical Weapon Pack 2",
+    "game_url": "https://hfmanor.com/tactical-weapon-pack-2",
+    "game_image_icon": "https://hfmanor.com/image/tactical-weapon-pack-2",
+    "game-id": "tactical-weapon-pack-2",
+    "iframe": "https://hfmanor.com/tactical-weapon-pack-2"
+  },
+  {
+    "name": "Scrapmetal",
+    "game_url": "https://hfmanor.com/scrapmetal",
+    "game_image_icon": "https://hfmanor.com/image/scrapmetal",
+    "game-id": "scrapmetal",
+    "iframe": "https://hfmanor.com/scrapmetal"
+  },
+  {
+    "name": "Ovo",
+    "game_url": "https://hfmanor.com/ovo",
+    "game_image_icon": "https://hfmanor.com/image/ovo",
+    "game-id": "ovo",
+    "iframe": "https://hfmanor.com/ovo"
+  },
+  {
+    "name": "Stealingthediamond",
+    "game_url": "https://hfmanor.com/stealingthediamond",
+    "game_image_icon": "https://hfmanor.com/image/stealingthediamond",
+    "game-id": "stealingthediamond",
+    "iframe": "https://hfmanor.com/stealingthediamond"
+  },
+  {
+    "name": "Jetpack Joyride",
+    "game_url": "https://hfmanor.com/jetpack-joyride",
+    "game_image_icon": "https://hfmanor.com/image/jetpack-joyride",
+    "game-id": "jetpack-joyride",
+    "iframe": "https://hfmanor.com/jetpack-joyride"
+  },
+  {
+    "name": "Fnaw",
+    "game_url": "https://hfmanor.com/fnaw",
+    "game_image_icon": "https://hfmanor.com/image/fnaw",
+    "game-id": "fnaw",
+    "iframe": "https://hfmanor.com/fnaw"
+  },
+  {
+    "name": "Run 2",
+    "game_url": "https://hfmanor.com/Run 2",
+    "game_image_icon": "https://hfmanor.com/image/Run 2",
+    "game-id": "Run 2",
+    "iframe": "https://hfmanor.com/Run 2"
+  },
+  {
+    "name": "Paper.io 2",
+    "game_url": "https://hfmanor.com/Paper.io 2",
+    "game_image_icon": "https://hfmanor.com/image/Paper.io 2",
+    "game-id": "Paper.io 2",
+    "iframe": "https://hfmanor.com/Paper.io 2"
+  },
+  {
+    "name": "Moto X3M Spooky",
+    "game_url": "https://hfmanor.com/moto-X3M-spooky",
+    "game_image_icon": "https://hfmanor.com/image/moto-X3M-spooky",
+    "game-id": "moto-X3M-spooky",
+    "iframe": "https://hfmanor.com/moto-X3M-spooky"
+  },
+  {
+    "name": "Backrooms",
+    "game_url": "https://hfmanor.com/backrooms",
+    "game_image_icon": "https://hfmanor.com/image/backrooms",
+    "game-id": "backrooms",
+    "iframe": "https://hfmanor.com/backrooms"
+  },
+  {
+    "name": "Five Nights At Freddy 1",
+    "game_url": "https://hfmanor.com/five-nights-at-freddy-1",
+    "game_image_icon": "https://hfmanor.com/image/five-nights-at-freddy-1",
+    "game-id": "five-nights-at-freddy-1",
+    "iframe": "https://hfmanor.com/five-nights-at-freddy-1"
+  },
+  {
+    "name": "Tank Trouble 2",
+    "game_url": "https://hfmanor.com/tank-trouble-2",
+    "game_image_icon": "https://hfmanor.com/image/tank-trouble-2",
+    "game-id": "tank-trouble-2",
+    "iframe": "https://hfmanor.com/tank-trouble-2"
+  },
+  {
+    "name": "Snowbattle",
+    "game_url": "https://hfmanor.com/snowbattle",
+    "game_image_icon": "https://hfmanor.com/image/snowbattle",
+    "game-id": "snowbattle",
+    "iframe": "https://hfmanor.com/snowbattle"
+  },
+  {
+    "name": "Run",
+    "game_url": "https://hfmanor.com/run",
+    "game_image_icon": "https://hfmanor.com/image/run",
+    "game-id": "run",
+    "iframe": "https://hfmanor.com/run"
+  },
+  {
+    "name": "Santy Is Home",
+    "game_url": "https://hfmanor.com/santy-is-home",
+    "game_image_icon": "https://hfmanor.com/image/santy-is-home",
+    "game-id": "santy-is-home",
+    "iframe": "https://hfmanor.com/santy-is-home"
+  },
+  {
+    "name": "Rooftop Snipers",
+    "game_url": "https://hfmanor.com/rooftop-snipers",
+    "game_image_icon": "https://hfmanor.com/image/rooftop-snipers",
+    "game-id": "rooftop-snipers",
+    "iframe": "https://hfmanor.com/rooftop-snipers"
+  },
+  {
+    "name": "Chrome Dino",
+    "game_url": "https://hfmanor.com/chrome-dino",
+    "game_image_icon": "https://hfmanor.com/image/chrome-dino",
+    "game-id": "chrome-dino",
+    "iframe": "https://hfmanor.com/chrome-dino"
+  },
+  {
+    "name": "Hackertype",
+    "game_url": "https://hfmanor.com/hackertype",
+    "game_image_icon": "https://hfmanor.com/image/hackertype",
+    "game-id": "hackertype",
+    "iframe": "https://hfmanor.com/hackertype"
+  },
+  {
+    "name": "Death Run 3d",
+    "game_url": "https://hfmanor.com/death-run-3d",
+    "game_image_icon": "https://hfmanor.com/image/death-run-3d",
+    "game-id": "death-run-3d",
+    "iframe": "https://hfmanor.com/death-run-3d"
+  },
+  {
+    "name": "Sort The Court",
+    "game_url": "https://hfmanor.com/sort-the-court",
+    "game_image_icon": "https://hfmanor.com/image/sort-the-court",
+    "game-id": "sort-the-court",
+    "iframe": "https://hfmanor.com/sort-the-court"
+  },
+  {
+    "name": "Grand Shift Auto",
+    "game_url": "https://hfmanor.com/grand-shift-auto",
+    "game_image_icon": "https://hfmanor.com/image/grand-shift-auto",
+    "game-id": "grand-shift-auto",
+    "iframe": "https://hfmanor.com/grand-shift-auto"
+  },
+  {
+    "name": "Sushi Unroll",
+    "game_url": "https://hfmanor.com/sushi-unroll",
+    "game_image_icon": "https://hfmanor.com/image/sushi-unroll",
+    "game-id": "sushi-unroll",
+    "iframe": "https://hfmanor.com/sushi-unroll"
+  },
+  {
+    "name": "10 Minutes Till Dawn",
+    "game_url": "https://hfmanor.com/10-minutes-till-dawn",
+    "game_image_icon": "https://hfmanor.com/image/10-minutes-till-dawn",
+    "game-id": "10-minutes-till-dawn",
+    "iframe": "https://hfmanor.com/10-minutes-till-dawn"
+  },
+  {
+    "name": "Zombs Royale",
+    "game_url": "https://hfmanor.com/zombs-royale",
+    "game_image_icon": "https://hfmanor.com/image/zombs-royale",
+    "game-id": "zombs-royale",
+    "iframe": "https://hfmanor.com/zombs-royale"
+  },
+  {
+    "name": "Miniputt",
+    "game_url": "https://hfmanor.com/miniputt",
+    "game_image_icon": "https://hfmanor.com/image/miniputt",
+    "game-id": "miniputt",
+    "iframe": "https://hfmanor.com/miniputt"
+  },
+  {
+    "name": "Dragon Vs Bricks",
+    "game_url": "https://hfmanor.com/dragon-vs-bricks",
+    "game_image_icon": "https://hfmanor.com/image/dragon-vs-bricks",
+    "game-id": "dragon-vs-bricks",
+    "iframe": "https://hfmanor.com/dragon-vs-bricks"
+  },
+  {
+    "name": "Drift Hunters",
+    "game_url": "https://hfmanor.com/drift-hunters",
+    "game_image_icon": "https://hfmanor.com/image/drift-hunters",
+    "game-id": "drift-hunters",
+    "iframe": "https://hfmanor.com/drift-hunters"
+  },
+  {
+    "name": "Gun Spin",
+    "game_url": "https://hfmanor.com/gun-spin",
+    "game_image_icon": "https://hfmanor.com/image/gun-spin",
+    "game-id": "gun-spin",
+    "iframe": "https://hfmanor.com/gun-spin"
+  },
+  {
+    "name": "Backrooms 2d",
+    "game_url": "https://hfmanor.com/backrooms-2d",
+    "game_image_icon": "https://hfmanor.com/image/backrooms-2d",
+    "game-id": "backrooms-2d",
+    "iframe": "https://hfmanor.com/backrooms-2d"
+  },
+  {
+    "name": "Just Fall",
+    "game_url": "https://hfmanor.com/just-fall",
+    "game_image_icon": "https://hfmanor.com/image/just-fall",
+    "game-id": "just-fall",
+    "iframe": "https://hfmanor.com/just-fall"
+  },
+  {
+    "name": "Dumbwaystodie",
+    "game_url": "https://hfmanor.com/dumbwaystodie",
+    "game_image_icon": "https://hfmanor.com/image/dumbwaystodie",
+    "game-id": "dumbwaystodie",
+    "iframe": "https://hfmanor.com/dumbwaystodie"
+  },
+  {
+    "name": "Happy Wheels",
+    "game_url": "https://hfmanor.com/happy-wheels",
+    "game_image_icon": "https://hfmanor.com/image/happy-wheels",
+    "game-id": "happy-wheels",
+    "iframe": "https://hfmanor.com/happy-wheels"
+  },
+  {
+    "name": "Funny Shooter 2",
+    "game_url": "https://hfmanor.com/funny-shooter-2",
+    "game_image_icon": "https://hfmanor.com/image/funny-shooter-2",
+    "game-id": "funny-shooter-2",
+    "iframe": "https://hfmanor.com/funny-shooter-2"
+  },
+  {
+    "name": "Noob Steve Parkour",
+    "game_url": "https://hfmanor.com/noob-steve-parkour",
+    "game_image_icon": "https://hfmanor.com/image/noob-steve-parkour",
+    "game-id": "noob-steve-parkour",
+    "iframe": "https://hfmanor.com/noob-steve-parkour"
+  },
+  {
+    "name": "Shell Shockers",
+    "game_url": "https://hfmanor.com/shell-shockers",
+    "game_image_icon": "https://hfmanor.com/image/shell-shockers",
+    "game-id": "shell-shockers",
+    "iframe": "https://hfmanor.com/shell-shockers"
+  },
+  {
+    "name": "Vex5",
+    "game_url": "https://hfmanor.com/vex5",
+    "game_image_icon": "https://hfmanor.com/image/vex5",
+    "game-id": "vex5",
+    "iframe": "https://hfmanor.com/vex5"
+  },
+  {
+    "name": "The Final Earth 2",
+    "game_url": "https://hfmanor.com/the-final-earth-2",
+    "game_image_icon": "https://hfmanor.com/image/the-final-earth-2",
+    "game-id": "the-final-earth-2",
+    "iframe": "https://hfmanor.com/the-final-earth-2"
+  },
+  {
+    "name": "Hungry Lamu",
+    "game_url": "https://hfmanor.com/hungry-lamu",
+    "game_image_icon": "https://hfmanor.com/image/hungry-lamu",
+    "game-id": "hungry-lamu",
+    "iframe": "https://hfmanor.com/hungry-lamu"
+  },
+  {
+    "name": "Csgo Clicker",
+    "game_url": "https://hfmanor.com/csgo-clicker",
+    "game_image_icon": "https://hfmanor.com/image/csgo-clicker",
+    "game-id": "csgo-clicker",
+    "iframe": "https://hfmanor.com/csgo-clicker"
+  },
+  {
+    "name": "Vex7",
+    "game_url": "https://hfmanor.com/vex7",
+    "game_image_icon": "https://hfmanor.com/image/vex7",
+    "game-id": "vex7",
+    "iframe": "https://hfmanor.com/vex7"
+  },
+  {
+    "name": "The Hotel",
+    "game_url": "https://hfmanor.com/the-hotel",
+    "game_image_icon": "https://hfmanor.com/image/the-hotel",
+    "game-id": "the-hotel",
+    "iframe": "https://hfmanor.com/the-hotel"
+  },
+  {
+    "name": "A Small World Cup",
+    "game_url": "https://hfmanor.com/a-small-world-cup",
+    "game_image_icon": "https://hfmanor.com/image/a-small-world-cup",
+    "game-id": "a-small-world-cup",
+    "iframe": "https://hfmanor.com/a-small-world-cup"
+  },
+  {
+    "name": "Five Nights At Freddy 2",
+    "game_url": "https://hfmanor.com/five-nights-at-freddy-2",
+    "game_image_icon": "https://hfmanor.com/image/five-nights-at-freddy-2",
+    "game-id": "five-nights-at-freddy-2",
+    "iframe": "https://hfmanor.com/five-nights-at-freddy-2"
+  },
+  {
+    "name": "Burger And Frights",
+    "game_url": "https://hfmanor.com/burger-and-frights",
+    "game_image_icon": "https://hfmanor.com/image/burger-and-frights",
+    "game-id": "burger-and-frights",
+    "iframe": "https://hfmanor.com/burger-and-frights"
+  },
+  {
+    "name": "Sandboxels",
+    "game_url": "https://hfmanor.com/sandboxels",
+    "game_image_icon": "https://hfmanor.com/image/sandboxels",
+    "game-id": "sandboxels",
+    "iframe": "https://hfmanor.com/sandboxels"
+  },
+  {
+    "name": "Stick Merge",
+    "game_url": "https://hfmanor.com/stick-merge",
+    "game_image_icon": "https://hfmanor.com/image/stick-merge",
+    "game-id": "stick-merge",
+    "iframe": "https://hfmanor.com/stick-merge"
+  },
+  {
+    "name": "Friday Night Funkin'",
+    "game_url": "https://hfmanor.com/Friday Night Funkin'",
+    "game_image_icon": "https://hfmanor.com/image/Friday Night Funkin'",
+    "game-id": "Friday Night Funkin'",
+    "iframe": "https://hfmanor.com/Friday Night Funkin'"
+  },
+  {
+    "name": "Meme2048",
+    "game_url": "https://hfmanor.com/meme2048",
+    "game_image_icon": "https://hfmanor.com/image/meme2048",
+    "game-id": "meme2048",
+    "iframe": "https://hfmanor.com/meme2048"
+  },
+  {
+    "name": "Smokingbarrels",
+    "game_url": "https://hfmanor.com/smokingbarrels",
+    "game_image_icon": "https://hfmanor.com/image/smokingbarrels",
+    "game-id": "smokingbarrels",
+    "iframe": "https://hfmanor.com/smokingbarrels"
+  },
+  {
+    "name": "Call Of Ops",
+    "game_url": "https://hfmanor.com/call-of-ops",
+    "game_image_icon": "https://hfmanor.com/image/call-of-ops",
+    "game-id": "call-of-ops",
+    "iframe": "https://hfmanor.com/call-of-ops"
+  },
+  {
+    "name": "Paper.io 1",
+    "game_url": "https://hfmanor.com/paper.io-1",
+    "game_image_icon": "https://hfmanor.com/image/paper.io-1",
+    "game-id": "paper.io-1",
+    "iframe": "https://hfmanor.com/paper.io-1"
+  },
+  {
+    "name": "Time Shooter 3",
+    "game_url": "https://hfmanor.com/time-shooter-3",
+    "game_image_icon": "https://hfmanor.com/image/time-shooter-3",
+    "game-id": "time-shooter-3",
+    "iframe": "https://hfmanor.com/time-shooter-3"
+  },
+  {
+    "name": "Pixel Combat 2",
+    "game_url": "https://hfmanor.com/pixel-combat-2",
+    "game_image_icon": "https://hfmanor.com/image/pixel-combat-2",
+    "game-id": "pixel-combat-2",
+    "iframe": "https://hfmanor.com/pixel-combat-2"
+  },
+  {
+    "name": "Moto X3M 2",
+    "game_url": "https://hfmanor.com/moto-X3M-2",
+    "game_image_icon": "https://hfmanor.com/image/moto-X3M-2",
+    "game-id": "moto-X3M-2",
+    "iframe": "https://hfmanor.com/moto-X3M-2"
+  },
+  {
+    "name": "Idle Shark",
+    "game_url": "https://hfmanor.com/idle-shark",
+    "game_image_icon": "https://hfmanor.com/image/idle-shark",
+    "game-id": "idle-shark",
+    "iframe": "https://hfmanor.com/idle-shark"
+  },
+  {
+    "name": "Hextris",
+    "game_url": "https://hfmanor.com/hextris",
+    "game_image_icon": "https://hfmanor.com/image/hextris",
+    "game-id": "hextris",
+    "iframe": "https://hfmanor.com/hextris"
+  },
+  {
+    "name": "Flashtetris",
+    "game_url": "https://hfmanor.com/flashtetris",
+    "game_image_icon": "https://hfmanor.com/image/flashtetris",
+    "game-id": "flashtetris",
+    "iframe": "https://hfmanor.com/flashtetris"
+  },
+  {
+    "name": "Hill Climb Racing",
+    "game_url": "https://hfmanor.com/hill-climb-racing",
+    "game_image_icon": "https://hfmanor.com/image/hill-climb-racing",
+    "game-id": "hill-climb-racing",
+    "iframe": "https://hfmanor.com/hill-climb-racing"
+  },
+  {
+    "name": "Hole.io",
+    "game_url": "https://hfmanor.com/hole.io",
+    "game_image_icon": "https://hfmanor.com/image/hole.io",
+    "game-id": "hole.io",
+    "iframe": "https://hfmanor.com/hole.io"
+  },
+  {
+    "name": "Flappy 2048",
+    "game_url": "https://hfmanor.com/flappy-2048",
+    "game_image_icon": "https://hfmanor.com/image/flappy-2048",
+    "game-id": "flappy-2048",
+    "iframe": "https://hfmanor.com/flappy-2048"
+  },
+  {
+    "name": "Unfairmario",
+    "game_url": "https://hfmanor.com/unfairmario",
+    "game_image_icon": "https://hfmanor.com/image/unfairmario",
+    "game-id": "unfairmario",
+    "iframe": "https://hfmanor.com/unfairmario"
+  },
+  {
+    "name": "Cut The Rope",
+    "game_url": "https://hfmanor.com/Cut The Rope",
+    "game_image_icon": "https://hfmanor.com/image/Cut The Rope",
+    "game-id": "Cut The Rope",
+    "iframe": "https://hfmanor.com/Cut The Rope"
+  },
+  {
+    "name": "Soldier Legend",
+    "game_url": "https://hfmanor.com/soldier-legend",
+    "game_image_icon": "https://hfmanor.com/image/soldier-legend",
+    "game-id": "soldier-legend",
+    "iframe": "https://hfmanor.com/soldier-legend"
+  },
+  {
+    "name": "Papery Planes",
+    "game_url": "https://hfmanor.com/papery-planes",
+    "game_image_icon": "https://hfmanor.com/image/papery-planes",
+    "game-id": "papery-planes",
+    "iframe": "https://hfmanor.com/papery-planes"
+  },
+  {
+    "name": "Idle Breakout",
+    "game_url": "https://hfmanor.com/idle-breakout",
+    "game_image_icon": "https://hfmanor.com/image/idle-breakout",
+    "game-id": "idle-breakout",
+    "iframe": "https://hfmanor.com/idle-breakout"
+  },
+  {
+    "name": "Ducklife3",
+    "game_url": "https://hfmanor.com/ducklife3",
+    "game_image_icon": "https://hfmanor.com/image/ducklife3",
+    "game-id": "ducklife3",
+    "iframe": "https://hfmanor.com/ducklife3"
+  },
+  {
+    "name": "Cars Simulator",
+    "game_url": "https://hfmanor.com/cars-simulator",
+    "game_image_icon": "https://hfmanor.com/image/cars-simulator",
+    "game-id": "cars-simulator",
+    "iframe": "https://hfmanor.com/cars-simulator"
+  },
+  {
+    "name": "Knife Master",
+    "game_url": "https://hfmanor.com/knife-master",
+    "game_image_icon": "https://hfmanor.com/image/knife-master",
+    "game-id": "knife-master",
+    "iframe": "https://hfmanor.com/knife-master"
+  },
+  {
+    "name": "Bacon May Die",
+    "game_url": "https://hfmanor.com/bacon-may-die",
+    "game_image_icon": "https://hfmanor.com/image/bacon-may-die",
+    "game-id": "bacon-may-die",
+    "iframe": "https://hfmanor.com/bacon-may-die"
+  },
+  {
+    "name": "Tomb Of The Mask",
+    "game_url": "https://hfmanor.com/tomb-of-the-mask",
+    "game_image_icon": "https://hfmanor.com/image/tomb-of-the-mask",
+    "game-id": "tomb-of-the-mask",
+    "iframe": "https://hfmanor.com/tomb-of-the-mask"
+  },
+  {
+    "name": "Backrooms2d",
+    "game_url": "https://hfmanor.com/backrooms2d",
+    "game_image_icon": "https://hfmanor.com/image/backrooms2d",
+    "game-id": "backrooms2d",
+    "iframe": "https://hfmanor.com/backrooms2d"
+  },
+  {
+    "name": "Mario",
+    "game_url": "https://hfmanor.com/mario",
+    "game_image_icon": "https://hfmanor.com/image/mario",
+    "game-id": "mario",
+    "iframe": "https://hfmanor.com/mario"
+  },
+  {
+    "name": "Tacticalassasin2",
+    "game_url": "https://hfmanor.com/tacticalassasin2",
+    "game_image_icon": "https://hfmanor.com/image/tacticalassasin2",
+    "game-id": "tacticalassasin2",
+    "iframe": "https://hfmanor.com/tacticalassasin2"
+  },
+  {
+    "name": "Generic Fishing Game",
+    "game_url": "https://hfmanor.com/generic-fishing-game",
+    "game_image_icon": "https://hfmanor.com/image/generic-fishing-game",
+    "game-id": "generic-fishing-game",
+    "iframe": "https://hfmanor.com/generic-fishing-game"
+  },
+  {
+    "name": "Worlds Hardest Game",
+    "game_url": "https://hfmanor.com/worlds-hardest-game",
+    "game_image_icon": "https://hfmanor.com/image/worlds-hardest-game",
+    "game-id": "worlds-hardest-game",
+    "iframe": "https://hfmanor.com/worlds-hardest-game"
+  },
+  {
+    "name": "Riddleschool",
+    "game_url": "https://hfmanor.com/riddleschool",
+    "game_image_icon": "https://hfmanor.com/image/riddleschool",
+    "game-id": "riddleschool",
+    "iframe": "https://hfmanor.com/riddleschool"
+  },
+  {
+    "name": "Wordle",
+    "game_url": "https://hfmanor.com/wordle",
+    "game_image_icon": "https://hfmanor.com/image/wordle",
+    "game-id": "wordle",
+    "iframe": "https://hfmanor.com/wordle"
+  },
+  {
+    "name": "Elasticman",
+    "game_url": "https://hfmanor.com/elasticman",
+    "game_image_icon": "https://hfmanor.com/image/elasticman",
+    "game-id": "elasticman",
+    "iframe": "https://hfmanor.com/elasticman"
+  },
+  {
+    "name": "Glass City",
+    "game_url": "https://hfmanor.com/glass-city",
+    "game_image_icon": "https://hfmanor.com/image/glass-city",
+    "game-id": "glass-city",
+    "iframe": "https://hfmanor.com/glass-city"
+  },
+  {
+    "name": "A Dance Of Fire And Ice",
+    "game_url": "https://hfmanor.com/a-dance-of-fire-and-ice",
+    "game_image_icon": "https://hfmanor.com/image/a-dance-of-fire-and-ice",
+    "game-id": "a-dance-of-fire-and-ice",
+    "iframe": "https://hfmanor.com/a-dance-of-fire-and-ice"
+  },
+  {
+    "name": "Deal Or No Deal",
+    "game_url": "https://hfmanor.com/deal-or-no-deal",
+    "game_image_icon": "https://hfmanor.com/image/deal-or-no-deal",
+    "game-id": "deal-or-no-deal",
+    "iframe": "https://hfmanor.com/deal-or-no-deal"
+  },
+  {
+    "name": "Doom",
+    "game_url": "https://hfmanor.com/doom",
+    "game_image_icon": "https://hfmanor.com/image/doom",
+    "game-id": "doom",
+    "iframe": "https://hfmanor.com/doom"
+  },
+  {
+    "name": "N Gon",
+    "game_url": "https://hfmanor.com/n-gon",
+    "game_image_icon": "https://hfmanor.com/image/n-gon",
+    "game-id": "n-gon",
+    "iframe": "https://hfmanor.com/n-gon"
+  },
+  {
+    "name": "Angry Sharks",
+    "game_url": "https://hfmanor.com/angry-sharks",
+    "game_image_icon": "https://hfmanor.com/image/angry-sharks",
+    "game-id": "angry-sharks",
+    "iframe": "https://hfmanor.com/angry-sharks"
+  },
+  {
+    "name": "Popcat Classic",
+    "game_url": "https://hfmanor.com/popcat-classic",
+    "game_image_icon": "https://hfmanor.com/image/popcat-classic",
+    "game-id": "popcat-classic",
+    "iframe": "https://hfmanor.com/popcat-classic"
+  },
+  {
+    "name": "Amazing Rope Police",
+    "game_url": "https://hfmanor.com/amazing-rope-police",
+    "game_image_icon": "https://hfmanor.com/image/amazing-rope-police",
+    "game-id": "amazing-rope-police",
+    "iframe": "https://hfmanor.com/amazing-rope-police"
+  },
+  {
+    "name": "Spacebar Clicker",
+    "game_url": "https://hfmanor.com/spacebar-clicker",
+    "game_image_icon": "https://hfmanor.com/image/spacebar-clicker",
+    "game-id": "spacebar-clicker",
+    "iframe": "https://hfmanor.com/spacebar-clicker"
+  },
+  {
+    "name": "Run 3",
+    "game_url": "https://hfmanor.com/run 3",
+    "game_image_icon": "https://hfmanor.com/image/run 3",
+    "game-id": "run 3",
+    "iframe": "https://hfmanor.com/run 3"
+  },
+  {
+    "name": "Eaglerjp",
+    "game_url": "https://hfmanor.com/eaglerjp",
+    "game_image_icon": "https://hfmanor.com/image/eaglerjp",
+    "game-id": "eaglerjp",
+    "iframe": "https://hfmanor.com/eaglerjp"
+  },
+  {
+    "name": "Balldodge",
+    "game_url": "https://hfmanor.com/balldodge",
+    "game_image_icon": "https://hfmanor.com/image/balldodge",
+    "game-id": "balldodge",
+    "iframe": "https://hfmanor.com/balldodge"
+  },
+  {
+    "name": "Theheist",
+    "game_url": "https://hfmanor.com/theheist",
+    "game_image_icon": "https://hfmanor.com/image/theheist",
+    "game-id": "theheist",
+    "iframe": "https://hfmanor.com/theheist"
+  },
+  {
+    "name": "Moto X3M Winter",
+    "game_url": "https://hfmanor.com/moto-X3M-winter",
+    "game_image_icon": "https://hfmanor.com/image/moto-X3M-winter",
+    "game-id": "moto-X3M-winter",
+    "iframe": "https://hfmanor.com/moto-X3M-winter"
+  },
+  {
+    "name": "Stickman Golf",
+    "game_url": "https://hfmanor.com/stickman-golf",
+    "game_image_icon": "https://hfmanor.com/image/stickman-golf",
+    "game-id": "stickman-golf",
+    "iframe": "https://hfmanor.com/stickman-golf"
+  },
+  {
+    "name": "Happy Hop",
+    "game_url": "https://hfmanor.com/happy-hop",
+    "game_image_icon": "https://hfmanor.com/image/happy-hop",
+    "game-id": "happy-hop",
+    "iframe": "https://hfmanor.com/happy-hop"
+  },
+  {
+    "name": "Cut The Rope Holiday",
+    "game_url": "https://hfmanor.com/Cut The Rope Holiday",
+    "game_image_icon": "https://hfmanor.com/image/Cut The Rope Holiday",
+    "game-id": "Cut The Rope Holiday",
+    "iframe": "https://hfmanor.com/Cut The Rope Holiday"
+  },
+  {
+    "name": "Dante",
+    "game_url": "https://hfmanor.com/dante",
+    "game_image_icon": "https://hfmanor.com/image/dante",
+    "game-id": "dante",
+    "iframe": "https://hfmanor.com/dante"
+  },
+  {
+    "name": "Tosstheturtle",
+    "game_url": "https://hfmanor.com/tosstheturtle",
+    "game_image_icon": "https://hfmanor.com/image/tosstheturtle",
+    "game-id": "tosstheturtle",
+    "iframe": "https://hfmanor.com/tosstheturtle"
+  },
+  {
+    "name": "Stack",
+    "game_url": "https://hfmanor.com/stack",
+    "game_image_icon": "https://hfmanor.com/image/stack",
+    "game-id": "stack",
+    "iframe": "https://hfmanor.com/stack"
+  },
+  {
+    "name": "You Are Bezos",
+    "game_url": "https://hfmanor.com/you-are-bezos",
+    "game_image_icon": "https://hfmanor.com/image/you-are-bezos",
+    "game-id": "you-are-bezos",
+    "iframe": "https://hfmanor.com/you-are-bezos"
+  },
+  {
+    "name": "Bad Ice Cream 3",
+    "game_url": "https://hfmanor.com/bad-ice-cream-3",
+    "game_image_icon": "https://hfmanor.com/image/bad-ice-cream-3",
+    "game-id": "bad-ice-cream-3",
+    "iframe": "https://hfmanor.com/bad-ice-cream-3"
+  },
+  {
+    "name": "Spelunky",
+    "game_url": "https://hfmanor.com/spelunky",
+    "game_image_icon": "https://hfmanor.com/image/spelunky",
+    "game-id": "spelunky",
+    "iframe": "https://hfmanor.com/spelunky"
+  },
+  {
+    "name": "Time Shooter 2",
+    "game_url": "https://hfmanor.com/time-shooter-2",
+    "game_image_icon": "https://hfmanor.com/image/time-shooter-2",
+    "game-id": "time-shooter-2",
+    "iframe": "https://hfmanor.com/time-shooter-2"
+  },
+  {
+    "name": "Awesometanks2",
+    "game_url": "https://hfmanor.com/awesometanks2",
+    "game_image_icon": "https://hfmanor.com/image/awesometanks2",
+    "game-id": "awesometanks2",
+    "iframe": "https://hfmanor.com/awesometanks2"
+  },
+  {
+    "name": "Sky Car Stunt",
+    "game_url": "https://hfmanor.com/sky-car-stunt",
+    "game_image_icon": "https://hfmanor.com/image/sky-car-stunt",
+    "game-id": "sky-car-stunt",
+    "iframe": "https://hfmanor.com/sky-car-stunt"
+  },
+  {
+    "name": "Goodnight",
+    "game_url": "https://hfmanor.com/goodnight",
+    "game_image_icon": "https://hfmanor.com/image/goodnight",
+    "game-id": "goodnight",
+    "iframe": "https://hfmanor.com/goodnight"
+  },
+  {
+    "name": "Infinite Craft",
+    "game_url": "https://hfmanor.com/infinite-craft",
+    "game_image_icon": "https://hfmanor.com/image/infinite-craft",
+    "game-id": "infinite-craft",
+    "iframe": "https://hfmanor.com/infinite-craft"
+  },
+  {
+    "name": "Earntodie",
+    "game_url": "https://hfmanor.com/earntodie",
+    "game_image_icon": "https://hfmanor.com/image/earntodie",
+    "game-id": "earntodie",
+    "iframe": "https://hfmanor.com/earntodie"
+  },
+  {
+    "name": "Tube Jumpers",
+    "game_url": "https://hfmanor.com/tube-jumpers",
+    "game_image_icon": "https://hfmanor.com/image/tube-jumpers",
+    "game-id": "tube-jumpers",
+    "iframe": "https://hfmanor.com/tube-jumpers"
+  },
+  {
+    "name": "Hoops",
+    "game_url": "https://hfmanor.com/hoops",
+    "game_image_icon": "https://hfmanor.com/image/hoops",
+    "game-id": "hoops",
+    "iframe": "https://hfmanor.com/hoops"
+  },
+  {
+    "name": "Cupcake2048",
+    "game_url": "https://hfmanor.com/cupcake2048",
+    "game_image_icon": "https://hfmanor.com/image/cupcake2048",
+    "game-id": "cupcake2048",
+    "iframe": "https://hfmanor.com/cupcake2048"
+  },
+  {
+    "name": "Impossiblequiz",
+    "game_url": "https://hfmanor.com/impossiblequiz",
+    "game_image_icon": "https://hfmanor.com/image/impossiblequiz",
+    "game-id": "impossiblequiz",
+    "iframe": "https://hfmanor.com/impossiblequiz"
+  },
+  {
+    "name": "Rolly Vortex",
+    "game_url": "https://hfmanor.com/rolly-vortex",
+    "game_image_icon": "https://hfmanor.com/image/rolly-vortex",
+    "game-id": "rolly-vortex",
+    "iframe": "https://hfmanor.com/rolly-vortex"
+  },
+  {
+    "name": "Checkers",
+    "game_url": "https://hfmanor.com/checkers",
+    "game_image_icon": "https://hfmanor.com/image/checkers",
+    "game-id": "checkers",
+    "iframe": "https://hfmanor.com/checkers"
+  },
+  {
+    "name": "Kitchen Gun Game",
+    "game_url": "https://hfmanor.com/kitchen-gun-game",
+    "game_image_icon": "https://hfmanor.com/image/kitchen-gun-game",
+    "game-id": "kitchen-gun-game",
+    "iframe": "https://hfmanor.com/kitchen-gun-game"
+  },
+  {
+    "name": "Bottle Flip 3d",
+    "game_url": "https://hfmanor.com/bottle-flip-3d",
+    "game_image_icon": "https://hfmanor.com/image/bottle-flip-3d",
+    "game-id": "bottle-flip-3d",
+    "iframe": "https://hfmanor.com/bottle-flip-3d"
+  },
+  {
+    "name": "Bobtherobber2",
+    "game_url": "https://hfmanor.com/bobtherobber2",
+    "game_image_icon": "https://hfmanor.com/image/bobtherobber2",
+    "game-id": "bobtherobber2",
+    "iframe": "https://hfmanor.com/bobtherobber2"
+  },
+  {
+    "name": "Robuxclicker",
+    "game_url": "https://hfmanor.com/robuxclicker",
+    "game_image_icon": "https://hfmanor.com/image/robuxclicker",
+    "game-id": "robuxclicker",
+    "iframe": "https://hfmanor.com/robuxclicker"
+  },
+  {
+    "name": "Precision Client",
+    "game_url": "https://hfmanor.com/precision-client",
+    "game_image_icon": "https://hfmanor.com/image/precision-client",
+    "game-id": "precision-client",
+    "iframe": "https://hfmanor.com/precision-client"
+  },
+  {
+    "name": "Subway Surfers Ny",
+    "game_url": "https://hfmanor.com/subway-surfers-ny",
+    "game_image_icon": "https://hfmanor.com/image/subway-surfers-ny",
+    "game-id": "subway-surfers-ny",
+    "iframe": "https://hfmanor.com/subway-surfers-ny"
+  },
+  {
+    "name": "Alienhominid",
+    "game_url": "https://hfmanor.com/alienhominid",
+    "game_image_icon": "https://hfmanor.com/image/alienhominid",
+    "game-id": "alienhominid",
+    "iframe": "https://hfmanor.com/alienhominid"
+  },
+  {
+    "name": "Circlo",
+    "game_url": "https://hfmanor.com/circlo",
+    "game_image_icon": "https://hfmanor.com/image/circlo",
+    "game-id": "circlo",
+    "iframe": "https://hfmanor.com/circlo"
+  },
+  {
+    "name": "Stickwar",
+    "game_url": "https://hfmanor.com/stickwar",
+    "game_image_icon": "https://hfmanor.com/image/stickwar",
+    "game-id": "stickwar",
+    "iframe": "https://hfmanor.com/stickwar"
+  },
+  {
+    "name": "Papasburgeria",
+    "game_url": "https://hfmanor.com/papasburgeria",
+    "game_image_icon": "https://hfmanor.com/image/papasburgeria",
+    "game-id": "papasburgeria",
+    "iframe": "https://hfmanor.com/papasburgeria"
+  },
+  {
+    "name": "Frying Nemo",
+    "game_url": "https://hfmanor.com/frying-nemo",
+    "game_image_icon": "https://hfmanor.com/image/frying-nemo",
+    "game-id": "frying-nemo",
+    "iframe": "https://hfmanor.com/frying-nemo"
+  },
+  {
+    "name": "Bloons Tower Defense 5",
+    "game_url": "https://hfmanor.com/Bloons Tower Defense 5",
+    "game_image_icon": "https://hfmanor.com/image/Bloons Tower Defense 5",
+    "game-id": "Bloons Tower Defense 5",
+    "iframe": "https://hfmanor.com/Bloons Tower Defense 5"
+  },
+  {
+    "name": "HexGL",
+    "game_url": "https://hfmanor.com/HexGL",
+    "game_image_icon": "https://hfmanor.com/image/HexGL",
+    "game-id": "HexGL",
+    "iframe": "https://hfmanor.com/HexGL"
+  },
+  {
+    "name": "Push Your Luck",
+    "game_url": "https://hfmanor.com/push-your-luck",
+    "game_image_icon": "https://hfmanor.com/image/push-your-luck",
+    "game-id": "push-your-luck",
+    "iframe": "https://hfmanor.com/push-your-luck"
+  },
+  {
+    "name": "Snowball",
+    "game_url": "https://hfmanor.com/snowball",
+    "game_image_icon": "https://hfmanor.com/image/snowball",
+    "game-id": "snowball",
+    "iframe": "https://hfmanor.com/snowball"
+  },
+  {
+    "name": "Slime Rush Td",
+    "game_url": "https://hfmanor.com/slime-rush-td",
+    "game_image_icon": "https://hfmanor.com/image/slime-rush-td",
+    "game-id": "slime-rush-td",
+    "iframe": "https://hfmanor.com/slime-rush-td"
+  },
+  {
+    "name": "Doge2048",
+    "game_url": "https://hfmanor.com/doge2048",
+    "game_image_icon": "https://hfmanor.com/image/doge2048",
+    "game-id": "doge2048",
+    "iframe": "https://hfmanor.com/doge2048"
+  },
+  {
+    "name": "Ltf3",
+    "game_url": "https://hfmanor.com/ltf3",
+    "game_image_icon": "https://hfmanor.com/image/ltf3",
+    "game-id": "ltf3",
+    "iframe": "https://hfmanor.com/ltf3"
+  },
+  {
+    "name": "Push The Square",
+    "game_url": "https://hfmanor.com/push-the-square",
+    "game_image_icon": "https://hfmanor.com/image/push-the-square",
+    "game-id": "push-the-square",
+    "iframe": "https://hfmanor.com/push-the-square"
+  },
+  {
+    "name": "Bus and subway",
+    "game_url": "https://hfmanor.com/bus and subway",
+    "game_image_icon": "https://hfmanor.com/image/bus and subway",
+    "game-id": "bus and subway",
+    "iframe": "https://hfmanor.com/bus and subway"
+  },
+  {
+    "name": "Vex4",
+    "game_url": "https://hfmanor.com/vex4",
+    "game_image_icon": "https://hfmanor.com/image/vex4",
+    "game-id": "vex4",
+    "iframe": "https://hfmanor.com/vex4"
+  },
+  {
+    "name": "Learntofly2",
+    "game_url": "https://hfmanor.com/learntofly2",
+    "game_image_icon": "https://hfmanor.com/image/learntofly2",
+    "game-id": "learntofly2",
+    "iframe": "https://hfmanor.com/learntofly2"
+  },
+  {
+    "name": "Thisistheonlylevel",
+    "game_url": "https://hfmanor.com/thisistheonlylevel",
+    "game_image_icon": "https://hfmanor.com/image/thisistheonlylevel",
+    "game-id": "thisistheonlylevel",
+    "iframe": "https://hfmanor.com/thisistheonlylevel"
+  },
+  {
+    "name": "Bad Ice Cream 2",
+    "game_url": "https://hfmanor.com/bad-ice-cream-2",
+    "game_image_icon": "https://hfmanor.com/image/bad-ice-cream-2",
+    "game-id": "bad-ice-cream-2",
+    "iframe": "https://hfmanor.com/bad-ice-cream-2"
+  },
+  {
+    "name": "Grindcraft",
+    "game_url": "https://hfmanor.com/grindcraft",
+    "game_image_icon": "https://hfmanor.com/image/grindcraft",
+    "game-id": "grindcraft",
+    "iframe": "https://hfmanor.com/grindcraft"
+  },
+  {
+    "name": "Riddleschool2",
+    "game_url": "https://hfmanor.com/riddleschool2",
+    "game_image_icon": "https://hfmanor.com/image/riddleschool2",
+    "game-id": "riddleschool2",
+    "iframe": "https://hfmanor.com/riddleschool2"
+  },
+  {
+    "name": "Cut The Rope TR",
+    "game_url": "https://hfmanor.com/Cut The Rope TR",
+    "game_image_icon": "https://hfmanor.com/image/Cut The Rope TR",
+    "game-id": "Cut The Rope TR",
+    "iframe": "https://hfmanor.com/Cut The Rope TR"
+  },
+  {
+    "name": "Escapingtheprison",
+    "game_url": "https://hfmanor.com/escapingtheprison",
+    "game_image_icon": "https://hfmanor.com/image/escapingtheprison",
+    "game-id": "escapingtheprison",
+    "iframe": "https://hfmanor.com/escapingtheprison"
+  },
+  {
+    "name": "Fruit Ninja",
+    "game_url": "https://hfmanor.com/fruit-ninja",
+    "game_image_icon": "https://hfmanor.com/image/fruit-ninja",
+    "game-id": "fruit-ninja",
+    "iframe": "https://hfmanor.com/fruit-ninja"
+  },
+  {
+    "name": "Stationmeltdown",
+    "game_url": "https://hfmanor.com/stationmeltdown",
+    "game_image_icon": "https://hfmanor.com/image/stationmeltdown",
+    "game-id": "stationmeltdown",
+    "iframe": "https://hfmanor.com/stationmeltdown"
+  },
+  {
+    "name": "Craftmine",
+    "game_url": "https://hfmanor.com/craftmine",
+    "game_image_icon": "https://hfmanor.com/image/craftmine",
+    "game-id": "craftmine",
+    "iframe": "https://hfmanor.com/craftmine"
+  },
+  {
+    "name": "Eel Slap",
+    "game_url": "https://hfmanor.com/eel-slap",
+    "game_image_icon": "https://hfmanor.com/image/eel-slap",
+    "game-id": "eel-slap",
+    "iframe": "https://hfmanor.com/eel-slap"
+  },
+  {
+    "name": "Portalflash",
+    "game_url": "https://hfmanor.com/portalflash",
+    "game_image_icon": "https://hfmanor.com/image/portalflash",
+    "game-id": "portalflash",
+    "iframe": "https://hfmanor.com/portalflash"
+  },
+  {
+    "name": "Station 141",
+    "game_url": "https://hfmanor.com/station-141",
+    "game_image_icon": "https://hfmanor.com/image/station-141",
+    "game-id": "station-141",
+    "iframe": "https://hfmanor.com/station-141"
+  },
+  {
+    "name": "Edge Surf",
+    "game_url": "https://hfmanor.com/edge-surf",
+    "game_image_icon": "https://hfmanor.com/image/edge-surf",
+    "game-id": "edge-surf",
+    "iframe": "https://hfmanor.com/edge-surf"
+  },
+  {
+    "name": "Fairsquares",
+    "game_url": "https://hfmanor.com/fairsquares",
+    "game_image_icon": "https://hfmanor.com/image/fairsquares",
+    "game-id": "fairsquares",
+    "iframe": "https://hfmanor.com/fairsquares"
+  },
+  {
+    "name": "Planetlife",
+    "game_url": "https://hfmanor.com/planetlife",
+    "game_image_icon": "https://hfmanor.com/image/planetlife",
+    "game-id": "planetlife",
+    "iframe": "https://hfmanor.com/planetlife"
+  },
+  {
+    "name": "Edgenotfound",
+    "game_url": "https://hfmanor.com/edgenotfound",
+    "game_image_icon": "https://hfmanor.com/image/edgenotfound",
+    "game-id": "edgenotfound",
+    "iframe": "https://hfmanor.com/edgenotfound"
+  },
+  {
+    "name": "Slope",
+    "game_url": "https://hfmanor.com/slope",
+    "game_image_icon": "https://hfmanor.com/image/slope",
+    "game-id": "slope",
+    "iframe": "https://hfmanor.com/slope"
+  },
+  {
+    "name": "Waterworks",
+    "game_url": "https://hfmanor.com/waterworks",
+    "game_image_icon": "https://hfmanor.com/image/waterworks",
+    "game-id": "waterworks",
+    "iframe": "https://hfmanor.com/waterworks"
+  },
+  {
+    "name": "Solitaire",
+    "game_url": "https://hfmanor.com/solitaire",
+    "game_image_icon": "https://hfmanor.com/image/solitaire",
+    "game-id": "solitaire",
+    "iframe": "https://hfmanor.com/solitaire"
+  },
+  {
+    "name": "Bloons Tower Defense",
+    "game_url": "https://hfmanor.com/Bloons Tower Defense",
+    "game_image_icon": "https://hfmanor.com/image/Bloons Tower Defense",
+    "game-id": "Bloons Tower Defense",
+    "iframe": "https://hfmanor.com/Bloons Tower Defense"
+  },
+  {
+    "name": "Wallsmash",
+    "game_url": "https://hfmanor.com/wallsmash",
+    "game_image_icon": "https://hfmanor.com/image/wallsmash",
+    "game-id": "wallsmash",
+    "iframe": "https://hfmanor.com/wallsmash"
+  },
+  {
+    "name": "Dogeminer2",
+    "game_url": "https://hfmanor.com/Dogeminer2",
+    "game_image_icon": "https://hfmanor.com/image/Dogeminer2",
+    "game-id": "Dogeminer2",
+    "iframe": "https://hfmanor.com/Dogeminer2"
+  },
+  {
+    "name": "Connect3",
+    "game_url": "https://hfmanor.com/connect3",
+    "game_image_icon": "https://hfmanor.com/image/connect3",
+    "game-id": "connect3",
+    "iframe": "https://hfmanor.com/connect3"
+  },
+  {
+    "name": "Hexempire",
+    "game_url": "https://hfmanor.com/hexempire",
+    "game_image_icon": "https://hfmanor.com/image/hexempire",
+    "game-id": "hexempire",
+    "iframe": "https://hfmanor.com/hexempire"
+  },
+  {
+    "name": "Adrenalinechallenge",
+    "game_url": "https://hfmanor.com/adrenalinechallenge",
+    "game_image_icon": "https://hfmanor.com/image/adrenalinechallenge",
+    "game-id": "adrenalinechallenge",
+    "iframe": "https://hfmanor.com/adrenalinechallenge"
+  },
+  {
+    "name": "Bloons Tower Defense 4",
+    "game_url": "https://hfmanor.com/Bloons Tower Defense 4",
+    "game_image_icon": "https://hfmanor.com/image/Bloons Tower Defense 4",
+    "game-id": "Bloons Tower Defense 4",
+    "iframe": "https://hfmanor.com/Bloons Tower Defense 4"
+  },
+  {
+    "name": "Om Bounce",
+    "game_url": "https://hfmanor.com/om-bounce",
+    "game_image_icon": "https://hfmanor.com/image/om-bounce",
+    "game-id": "om-bounce",
+    "iframe": "https://hfmanor.com/om-bounce"
+  },
+  {
+    "name": "Kittencannon",
+    "game_url": "https://hfmanor.com/kittencannon",
+    "game_image_icon": "https://hfmanor.com/image/kittencannon",
+    "game-id": "kittencannon",
+    "iframe": "https://hfmanor.com/kittencannon"
+  },
+  {
+    "name": "Flappy plane",
+    "game_url": "https://hfmanor.com/flappy plane",
+    "game_image_icon": "https://hfmanor.com/image/flappy plane",
+    "game-id": "flappy plane",
+    "iframe": "https://hfmanor.com/flappy plane"
+  },
+  {
+    "name": "Spacegarden",
+    "game_url": "https://hfmanor.com/spacegarden",
+    "game_image_icon": "https://hfmanor.com/image/spacegarden",
+    "game-id": "spacegarden",
+    "iframe": "https://hfmanor.com/spacegarden"
+  },
+  {
+    "name": "Astray",
+    "game_url": "https://hfmanor.com/astray",
+    "game_image_icon": "https://hfmanor.com/image/astray",
+    "game-id": "astray",
+    "iframe": "https://hfmanor.com/astray"
+  },
+  {
+    "name": "Tiny Islands",
+    "game_url": "https://hfmanor.com/tiny-islands",
+    "game_image_icon": "https://hfmanor.com/image/tiny-islands",
+    "game-id": "tiny-islands",
+    "iframe": "https://hfmanor.com/tiny-islands"
+  },
+  {
+    "name": "Blacholesquare",
+    "game_url": "https://hfmanor.com/blacholesquare",
+    "game_image_icon": "https://hfmanor.com/image/blacholesquare",
+    "game-id": "blacholesquare",
+    "iframe": "https://hfmanor.com/blacholesquare"
+  },
+  {
+    "name": "Bonkio",
+    "game_url": "https://hfmanor.com/bonkio",
+    "game_image_icon": "https://hfmanor.com/image/bonkio",
+    "game-id": "bonkio",
+    "iframe": "https://hfmanor.com/bonkio"
+  },
+  {
+    "name": "Defend The Tank",
+    "game_url": "https://hfmanor.com/defend-the-tank",
+    "game_image_icon": "https://hfmanor.com/image/defend-the-tank",
+    "game-id": "defend-the-tank",
+    "iframe": "https://hfmanor.com/defend-the-tank"
+  },
+  {
+    "name": "Matrixrampage",
+    "game_url": "https://hfmanor.com/matrixrampage",
+    "game_image_icon": "https://hfmanor.com/image/matrixrampage",
+    "game-id": "matrixrampage",
+    "iframe": "https://hfmanor.com/matrixrampage"
+  },
+  {
+    "name": "Particle Clicker",
+    "game_url": "https://hfmanor.com/particle-clicker",
+    "game_image_icon": "https://hfmanor.com/image/particle-clicker",
+    "game-id": "particle-clicker",
+    "iframe": "https://hfmanor.com/particle-clicker"
+  },
+  {
+    "name": "Runner",
+    "game_url": "https://hfmanor.com/runner",
+    "game_image_icon": "https://hfmanor.com/image/runner",
+    "game-id": "runner",
+    "iframe": "https://hfmanor.com/runner"
+  },
+  {
+    "name": "Level13",
+    "game_url": "https://hfmanor.com/level13",
+    "game_image_icon": "https://hfmanor.com/image/level13",
+    "game-id": "level13",
+    "iframe": "https://hfmanor.com/level13"
+  },
+  {
+    "name": "Tv Static",
+    "game_url": "https://hfmanor.com/tv-static",
+    "game_image_icon": "https://hfmanor.com/image/tv-static",
+    "game-id": "tv-static",
+    "iframe": "https://hfmanor.com/tv-static"
+  },
+  {
+    "name": "Synesthesia",
+    "game_url": "https://hfmanor.com/synesthesia",
+    "game_image_icon": "https://hfmanor.com/image/synesthesia",
+    "game-id": "synesthesia",
+    "iframe": "https://hfmanor.com/synesthesia"
+  },
+  {
+    "name": "OfflineParadise",
+    "game_url": "https://hfmanor.com/OfflineParadise",
+    "game_image_icon": "https://hfmanor.com/image/OfflineParadise",
+    "game-id": "OfflineParadise",
+    "iframe": "https://hfmanor.com/OfflineParadise"
+  },
+  {
+    "name": "Minesweeper",
+    "game_url": "https://hfmanor.com/minesweeper",
+    "game_image_icon": "https://hfmanor.com/image/minesweeper",
+    "game-id": "minesweeper",
+    "iframe": "https://hfmanor.com/minesweeper"
+  },
+  {
+    "name": "Doctor Acorn2",
+    "game_url": "https://hfmanor.com/doctor-acorn2",
+    "game_image_icon": "https://hfmanor.com/image/doctor-acorn2",
+    "game-id": "doctor-acorn2",
+    "iframe": "https://hfmanor.com/doctor-acorn2"
+  },
+  {
+    "name": "Hardware Tycoon",
+    "game_url": "https://hfmanor.com/hardware-tycoon",
+    "game_image_icon": "https://hfmanor.com/image/hardware-tycoon",
+    "game-id": "hardware-tycoon",
+    "iframe": "https://hfmanor.com/hardware-tycoon"
+  },
+  {
+    "name": "Rabbit Samurai2",
+    "game_url": "https://hfmanor.com/rabbit-samurai2",
+    "game_image_icon": "https://hfmanor.com/image/rabbit-samurai2",
+    "game-id": "rabbit-samurai2",
+    "iframe": "https://hfmanor.com/rabbit-samurai2"
+  },
+  {
+    "name": "Thebattle",
+    "game_url": "https://hfmanor.com/thebattle",
+    "game_image_icon": "https://hfmanor.com/image/thebattle",
+    "game-id": "thebattle",
+    "iframe": "https://hfmanor.com/thebattle"
+  },
+  {
+    "name": "Rolling Forests",
+    "game_url": "https://hfmanor.com/rolling-forests",
+    "game_image_icon": "https://hfmanor.com/image/rolling-forests",
+    "game-id": "rolling-forests",
+    "iframe": "https://hfmanor.com/rolling-forests"
+  },
+  {
+    "name": "Exo",
+    "game_url": "https://hfmanor.com/exo",
+    "game_image_icon": "https://hfmanor.com/image/exo",
+    "game-id": "exo",
+    "iframe": "https://hfmanor.com/exo"
+  },
+  {
+    "name": "Marvinspectrum",
+    "game_url": "https://hfmanor.com/marvinspectrum",
+    "game_image_icon": "https://hfmanor.com/image/marvinspectrum",
+    "game-id": "marvinspectrum",
+    "iframe": "https://hfmanor.com/marvinspectrum"
+  },
+  {
+    "name": "Endlesswar3",
+    "game_url": "https://hfmanor.com/endlesswar3",
+    "game_image_icon": "https://hfmanor.com/image/endlesswar3",
+    "game-id": "endlesswar3",
+    "iframe": "https://hfmanor.com/endlesswar3"
+  },
+  {
+    "name": "Twitch Tetris",
+    "game_url": "https://hfmanor.com/twitch-tetris",
+    "game_image_icon": "https://hfmanor.com/image/twitch-tetris",
+    "game-id": "twitch-tetris",
+    "iframe": "https://hfmanor.com/twitch-tetris"
+  },
+  {
+    "name": "Bloons Tower Defense 2",
+    "game_url": "https://hfmanor.com/Bloons Tower Defense 2",
+    "game_image_icon": "https://hfmanor.com/image/Bloons Tower Defense 2",
+    "game-id": "Bloons Tower Defense 2",
+    "iframe": "https://hfmanor.com/Bloons Tower Defense 2"
+  },
+  {
+    "name": "Helicopter",
+    "game_url": "https://hfmanor.com/helicopter",
+    "game_image_icon": "https://hfmanor.com/image/helicopter",
+    "game-id": "helicopter",
+    "iframe": "https://hfmanor.com/helicopter"
+  },
+  {
+    "name": "Factoryballs",
+    "game_url": "https://hfmanor.com/factoryballs",
+    "game_image_icon": "https://hfmanor.com/image/factoryballs",
+    "game-id": "factoryballs",
+    "iframe": "https://hfmanor.com/factoryballs"
+  },
+  {
+    "name": "Go Ball",
+    "game_url": "https://hfmanor.com/go-ball",
+    "game_image_icon": "https://hfmanor.com/image/go-ball",
+    "game-id": "go-ball",
+    "iframe": "https://hfmanor.com/go-ball"
+  },
+  {
+    "name": "Btts",
+    "game_url": "https://hfmanor.com/btts",
+    "game_image_icon": "https://hfmanor.com/image/btts",
+    "game-id": "btts",
+    "iframe": "https://hfmanor.com/btts"
+  },
+  {
+    "name": "Swerve",
+    "game_url": "https://hfmanor.com/swerve",
+    "game_image_icon": "https://hfmanor.com/image/swerve",
+    "game-id": "swerve",
+    "iframe": "https://hfmanor.com/swerve"
+  },
+  {
+    "name": "1",
+    "game_url": "https://hfmanor.com/1",
+    "game_image_icon": "https://hfmanor.com/image/1",
+    "game-id": "1",
+    "iframe": "https://hfmanor.com/1"
+  },
+  {
+    "name": "Wolf2d",
+    "game_url": "https://hfmanor.com/wolf2d",
+    "game_image_icon": "https://hfmanor.com/image/wolf2d",
+    "game-id": "wolf2d",
+    "iframe": "https://hfmanor.com/wolf2d"
+  },
+  {
+    "name": "DOOMORI",
+    "game_url": "https://hfmanor.com/DOOMORI",
+    "game_image_icon": "https://hfmanor.com/image/DOOMORI",
+    "game-id": "DOOMORI",
+    "iframe": "https://hfmanor.com/DOOMORI"
+  },
+  {
+    "name": "Ninjavsevilcorp",
+    "game_url": "https://hfmanor.com/ninjavsevilcorp",
+    "game_image_icon": "https://hfmanor.com/image/ninjavsevilcorp",
+    "game-id": "ninjavsevilcorp",
+    "iframe": "https://hfmanor.com/ninjavsevilcorp"
+  },
+  {
+    "name": "Handshakes",
+    "game_url": "https://hfmanor.com/handshakes",
+    "game_image_icon": "https://hfmanor.com/image/handshakes",
+    "game-id": "handshakes",
+    "iframe": "https://hfmanor.com/handshakes"
+  },
+  {
+    "name": "Fancypantsadventures",
+    "game_url": "https://hfmanor.com/fancypantsadventures",
+    "game_image_icon": "https://hfmanor.com/image/fancypantsadventures",
+    "game-id": "fancypantsadventures",
+    "iframe": "https://hfmanor.com/fancypantsadventures"
+  },
+  {
+    "name": "Fireboywatergirlforesttemple",
+    "game_url": "https://hfmanor.com/fireboywatergirlforesttemple",
+    "game_image_icon": "https://hfmanor.com/image/fireboywatergirlforesttemple",
+    "game-id": "fireboywatergirlforesttemple",
+    "iframe": "https://hfmanor.com/fireboywatergirlforesttemple"
+  },
+  {
+    "name": "Interactivebuddy",
+    "game_url": "https://hfmanor.com/interactivebuddy",
+    "game_image_icon": "https://hfmanor.com/image/interactivebuddy",
+    "game-id": "interactivebuddy",
+    "iframe": "https://hfmanor.com/interactivebuddy"
+  },
+  {
+    "name": "Shotinthedark",
+    "game_url": "https://hfmanor.com/shotinthedark",
+    "game_image_icon": "https://hfmanor.com/image/shotinthedark",
+    "game-id": "shotinthedark",
+    "iframe": "https://hfmanor.com/shotinthedark"
+  },
+  {
+    "name": "Stack Bump 3d",
+    "game_url": "https://hfmanor.com/stack-bump-3d",
+    "game_image_icon": "https://hfmanor.com/image/stack-bump-3d",
+    "game-id": "stack-bump-3d",
+    "iframe": "https://hfmanor.com/stack-bump-3d"
+  },
+  {
+    "name": "Zigzag",
+    "game_url": "https://hfmanor.com/zigzag",
+    "game_image_icon": "https://hfmanor.com/image/zigzag",
+    "game-id": "zigzag",
+    "iframe": "https://hfmanor.com/zigzag"
+  },
+  {
+    "name": "Iceagebaby",
+    "game_url": "https://hfmanor.com/iceagebaby",
+    "game_image_icon": "https://hfmanor.com/image/iceagebaby",
+    "game-id": "iceagebaby",
+    "iframe": "https://hfmanor.com/iceagebaby"
+  },
+  {
+    "name": "Rabbit Samurai",
+    "game_url": "https://hfmanor.com/rabbit-samurai",
+    "game_image_icon": "https://hfmanor.com/image/rabbit-samurai",
+    "game-id": "rabbit-samurai",
+    "iframe": "https://hfmanor.com/rabbit-samurai"
+  },
+  {
+    "name": "Duke Nukem 2",
+    "game_url": "https://hfmanor.com/duke-nukem-2",
+    "game_image_icon": "https://hfmanor.com/image/duke-nukem-2",
+    "game-id": "duke-nukem-2",
+    "iframe": "https://hfmanor.com/duke-nukem-2"
+  },
+  {
+    "name": "Space Company",
+    "game_url": "https://hfmanor.com/space-company",
+    "game_image_icon": "https://hfmanor.com/image/space-company",
+    "game-id": "space-company",
+    "iframe": "https://hfmanor.com/space-company"
+  },
+  {
+    "name": "Ninja",
+    "game_url": "https://hfmanor.com/ninja",
+    "game_image_icon": "https://hfmanor.com/image/ninja",
+    "game-id": "ninja",
+    "iframe": "https://hfmanor.com/ninja"
+  },
+  {
+    "name": "Amidst The Clouds",
+    "game_url": "https://hfmanor.com/amidst-the-clouds",
+    "game_image_icon": "https://hfmanor.com/image/amidst-the-clouds",
+    "game-id": "amidst-the-clouds",
+    "iframe": "https://hfmanor.com/amidst-the-clouds"
+  },
+  {
+    "name": "Wolf3d",
+    "game_url": "https://hfmanor.com/wolf3d",
+    "game_image_icon": "https://hfmanor.com/image/wolf3d",
+    "game-id": "wolf3d",
+    "iframe": "https://hfmanor.com/wolf3d"
+  },
+  {
+    "name": "Stormthehouse2",
+    "game_url": "https://hfmanor.com/stormthehouse2",
+    "game_image_icon": "https://hfmanor.com/image/stormthehouse2",
+    "game-id": "stormthehouse2",
+    "iframe": "https://hfmanor.com/stormthehouse2"
+  },
+  {
+    "name": "Xx142 B2exe",
+    "game_url": "https://hfmanor.com/xx142-b2exe",
+    "game_image_icon": "https://hfmanor.com/image/xx142-b2exe",
+    "game-id": "xx142-b2exe",
+    "iframe": "https://hfmanor.com/xx142-b2exe"
+  },
+  {
+    "name": "Supermarioconstruct",
+    "game_url": "https://hfmanor.com/supermarioconstruct",
+    "game_image_icon": "https://hfmanor.com/image/supermarioconstruct",
+    "game-id": "supermarioconstruct",
+    "iframe": "https://hfmanor.com/supermarioconstruct"
+  },
+  {
+    "name": "Vex3",
+    "game_url": "https://hfmanor.com/vex3",
+    "game_image_icon": "https://hfmanor.com/image/vex3",
+    "game-id": "vex3",
+    "iframe": "https://hfmanor.com/vex3"
+  },
+  {
+    "name": "Greybox",
+    "game_url": "https://hfmanor.com/greybox",
+    "game_image_icon": "https://hfmanor.com/image/greybox",
+    "game-id": "greybox",
+    "iframe": "https://hfmanor.com/greybox"
+  },
+  {
+    "name": "Google Snake",
+    "game_url": "https://hfmanor.com/google-snake",
+    "game_image_icon": "https://hfmanor.com/image/google-snake",
+    "game-id": "google-snake",
+    "iframe": "https://hfmanor.com/google-snake"
+  },
+  {
+    "name": "X Trial Racing",
+    "game_url": "https://hfmanor.com/x-trial-racing",
+    "game_image_icon": "https://hfmanor.com/image/x-trial-racing",
+    "game-id": "x-trial-racing",
+    "iframe": "https://hfmanor.com/x-trial-racing"
+  },
+  {
+    "name": "Dodge",
+    "game_url": "https://hfmanor.com/dodge",
+    "game_image_icon": "https://hfmanor.com/image/dodge",
+    "game-id": "dodge",
+    "iframe": "https://hfmanor.com/dodge"
+  },
+  {
+    "name": "Missiles",
+    "game_url": "https://hfmanor.com/missiles",
+    "game_image_icon": "https://hfmanor.com/image/missiles",
+    "game-id": "missiles",
+    "iframe": "https://hfmanor.com/missiles"
+  },
+  {
+    "name": "The Final Earth",
+    "game_url": "https://hfmanor.com/the-final-earth",
+    "game_image_icon": "https://hfmanor.com/image/the-final-earth",
+    "game-id": "the-final-earth",
+    "iframe": "https://hfmanor.com/the-final-earth"
+  },
+  {
+    "name": "Superautopets",
+    "game_url": "https://hfmanor.com/superautopets",
+    "game_image_icon": "https://hfmanor.com/image/superautopets",
+    "game-id": "superautopets",
+    "iframe": "https://hfmanor.com/superautopets"
+  },
+  {
+    "name": "Vex2",
+    "game_url": "https://hfmanor.com/vex2",
+    "game_image_icon": "https://hfmanor.com/image/vex2",
+    "game-id": "vex2",
+    "iframe": "https://hfmanor.com/vex2"
+  },
+  {
+    "name": "Townscaper",
+    "game_url": "https://hfmanor.com/townscaper",
+    "game_image_icon": "https://hfmanor.com/image/townscaper",
+    "game-id": "townscaper",
+    "iframe": "https://hfmanor.com/townscaper"
+  },
+  {
+    "name": "My Rusty Submarine",
+    "game_url": "https://hfmanor.com/my-rusty-submarine",
+    "game_image_icon": "https://hfmanor.com/image/my-rusty-submarine",
+    "game-id": "my-rusty-submarine",
+    "iframe": "https://hfmanor.com/my-rusty-submarine"
+  },
+  {
+    "name": "Canyon Defense",
+    "game_url": "https://hfmanor.com/canyon-defense",
+    "game_image_icon": "https://hfmanor.com/image/canyon-defense",
+    "game-id": "canyon-defense",
+    "iframe": "https://hfmanor.com/canyon-defense"
+  },
+  {
+    "name": "Align 4",
+    "game_url": "https://hfmanor.com/align-4",
+    "game_image_icon": "https://hfmanor.com/image/align-4",
+    "game-id": "align-4",
+    "iframe": "https://hfmanor.com/align-4"
+  },
+  {
+    "name": "Cell Machine",
+    "game_url": "https://hfmanor.com/cell-machine",
+    "game_image_icon": "https://hfmanor.com/image/cell-machine",
+    "game-id": "cell-machine",
+    "iframe": "https://hfmanor.com/cell-machine"
+  },
+  {
+    "name": "Overwatch",
+    "game_url": "https://hfmanor.com/overwatch",
+    "game_image_icon": "https://hfmanor.com/image/overwatch",
+    "game-id": "overwatch",
+    "iframe": "https://hfmanor.com/overwatch"
+  },
+  {
+    "name": "Polybranch",
+    "game_url": "https://hfmanor.com/polybranch",
+    "game_image_icon": "https://hfmanor.com/image/polybranch",
+    "game-id": "polybranch",
+    "iframe": "https://hfmanor.com/polybranch"
+  },
+  {
+    "name": "100ng",
+    "game_url": "https://hfmanor.com/100ng",
+    "game_image_icon": "https://hfmanor.com/image/100ng",
+    "game-id": "100ng",
+    "iframe": "https://hfmanor.com/100ng"
+  },
+  {
+    "name": "Scratcharia",
+    "game_url": "https://hfmanor.com/scratcharia",
+    "game_image_icon": "https://hfmanor.com/image/scratcharia",
+    "game-id": "scratcharia",
+    "iframe": "https://hfmanor.com/scratcharia"
+  },
+  {
+    "name": "Piclient",
+    "game_url": "https://hfmanor.com/piclient",
+    "game_image_icon": "https://hfmanor.com/image/piclient",
+    "game-id": "piclient",
+    "iframe": "https://hfmanor.com/piclient"
+  },
+  {
+    "name": "Highrisehop",
+    "game_url": "https://hfmanor.com/highrisehop",
+    "game_image_icon": "https://hfmanor.com/image/highrisehop",
+    "game-id": "highrisehop",
+    "iframe": "https://hfmanor.com/highrisehop"
+  },
+  {
+    "name": "Ns Shaft",
+    "game_url": "https://hfmanor.com/ns-shaft",
+    "game_image_icon": "https://hfmanor.com/image/ns-shaft",
+    "game-id": "ns-shaft",
+    "iframe": "https://hfmanor.com/ns-shaft"
+  },
+  {
+    "name": "Cannon Basketball 4",
+    "game_url": "https://hfmanor.com/cannon-basketball-4",
+    "game_image_icon": "https://hfmanor.com/image/cannon-basketball-4",
+    "game-id": "cannon-basketball-4",
+    "iframe": "https://hfmanor.com/cannon-basketball-4"
+  },
+  {
+    "name": "Stickman Boost",
+    "game_url": "https://hfmanor.com/stickman-boost",
+    "game_image_icon": "https://hfmanor.com/image/stickman-boost",
+    "game-id": "stickman-boost",
+    "iframe": "https://hfmanor.com/stickman-boost"
+  },
+  {
+    "name": "Boxhead2play",
+    "game_url": "https://hfmanor.com/boxhead2play",
+    "game_image_icon": "https://hfmanor.com/image/boxhead2play",
+    "game-id": "boxhead2play",
+    "iframe": "https://hfmanor.com/boxhead2play"
+  },
+  {
+    "name": "Learntofly",
+    "game_url": "https://hfmanor.com/learntofly",
+    "game_image_icon": "https://hfmanor.com/image/learntofly",
+    "game-id": "learntofly",
+    "iframe": "https://hfmanor.com/learntofly"
+  },
+  {
+    "name": "Weavesilk",
+    "game_url": "https://hfmanor.com/weavesilk",
+    "game_image_icon": "https://hfmanor.com/image/weavesilk",
+    "game-id": "weavesilk",
+    "iframe": "https://hfmanor.com/weavesilk"
+  },
+  {
+    "name": "Riddletransfer",
+    "game_url": "https://hfmanor.com/riddletransfer",
+    "game_image_icon": "https://hfmanor.com/image/riddletransfer",
+    "game-id": "riddletransfer",
+    "iframe": "https://hfmanor.com/riddletransfer"
+  },
+  {
+    "name": "Evolution",
+    "game_url": "https://hfmanor.com/evolution",
+    "game_image_icon": "https://hfmanor.com/image/evolution",
+    "game-id": "evolution",
+    "iframe": "https://hfmanor.com/evolution"
+  },
+  {
+    "name": "Cubefield",
+    "game_url": "https://hfmanor.com/cubefield",
+    "game_image_icon": "https://hfmanor.com/image/cubefield",
+    "game-id": "cubefield",
+    "iframe": "https://hfmanor.com/cubefield"
+  },
+  {
+    "name": "Riddletransfer2",
+    "game_url": "https://hfmanor.com/riddletransfer2",
+    "game_image_icon": "https://hfmanor.com/image/riddletransfer2",
+    "game-id": "riddletransfer2",
+    "iframe": "https://hfmanor.com/riddletransfer2"
+  },
+  {
+    "name": "Legacyflashgames",
+    "game_url": "https://hfmanor.com/legacyflashgames",
+    "game_image_icon": "https://hfmanor.com/image/legacyflashgames",
+    "game-id": "legacyflashgames",
+    "iframe": "https://hfmanor.com/legacyflashgames"
+  },
+  {
+    "name": "Champion Island",
+    "game_url": "https://hfmanor.com/champion-island",
+    "game_image_icon": "https://hfmanor.com/image/champion-island",
+    "game-id": "champion-island",
+    "iframe": "https://hfmanor.com/champion-island"
+  },
+  {
+    "name": "Kirkaio",
+    "game_url": "https://hfmanor.com/kirkaio",
+    "game_image_icon": "https://hfmanor.com/image/kirkaio",
+    "game-id": "kirkaio",
+    "iframe": "https://hfmanor.com/kirkaio"
+  },
+  {
+    "name": "Shogunshowdown",
+    "game_url": "https://hfmanor.com/shogunshowdown",
+    "game_image_icon": "https://hfmanor.com/image/shogunshowdown",
+    "game-id": "shogunshowdown",
+    "iframe": "https://hfmanor.com/shogunshowdown"
+  },
+  {
+    "name": "Riddleschool5",
+    "game_url": "https://hfmanor.com/riddleschool5",
+    "game_image_icon": "https://hfmanor.com/image/riddleschool5",
+    "game-id": "riddleschool5",
+    "iframe": "https://hfmanor.com/riddleschool5"
+  },
+  {
+    "name": "Flippy Fish",
+    "game_url": "https://hfmanor.com/flippy-fish",
+    "game_image_icon": "https://hfmanor.com/image/flippy-fish",
+    "game-id": "flippy-fish",
+    "iframe": "https://hfmanor.com/flippy-fish"
+  },
+  {
+    "name": "Fantasy Dash",
+    "game_url": "https://hfmanor.com/fantasy-dash",
+    "game_image_icon": "https://hfmanor.com/image/fantasy-dash",
+    "game-id": "fantasy-dash",
+    "iframe": "https://hfmanor.com/fantasy-dash"
+  },
+  {
+    "name": "Iron dash",
+    "game_url": "https://hfmanor.com/iron dash",
+    "game_image_icon": "https://hfmanor.com/image/iron dash",
+    "game-id": "iron dash",
+    "iframe": "https://hfmanor.com/iron dash"
+  },
+  {
+    "name": "Creativekillchamber",
+    "game_url": "https://hfmanor.com/creativekillchamber",
+    "game_image_icon": "https://hfmanor.com/image/creativekillchamber",
+    "game-id": "creativekillchamber",
+    "iframe": "https://hfmanor.com/creativekillchamber"
+  },
+  {
+    "name": "Core Ball",
+    "game_url": "https://hfmanor.com/core-ball",
+    "game_image_icon": "https://hfmanor.com/image/core-ball",
+    "game-id": "core-ball",
+    "iframe": "https://hfmanor.com/core-ball"
+  },
+  {
+    "name": "Avalanche",
+    "game_url": "https://hfmanor.com/avalanche",
+    "game_image_icon": "https://hfmanor.com/image/avalanche",
+    "game-id": "avalanche",
+    "iframe": "https://hfmanor.com/avalanche"
+  },
+  {
+    "name": "Georgeandtheprinter",
+    "game_url": "https://hfmanor.com/georgeandtheprinter",
+    "game_image_icon": "https://hfmanor.com/image/georgeandtheprinter",
+    "game-id": "georgeandtheprinter",
+    "iframe": "https://hfmanor.com/georgeandtheprinter"
+  },
+  {
+    "name": "Pigeon Ascent",
+    "game_url": "https://hfmanor.com/pigeon-ascent",
+    "game_image_icon": "https://hfmanor.com/image/pigeon-ascent",
+    "game-id": "pigeon-ascent",
+    "iframe": "https://hfmanor.com/pigeon-ascent"
+  },
+  {
+    "name": "Gravity Soccer",
+    "game_url": "https://hfmanor.com/gravity-soccer",
+    "game_image_icon": "https://hfmanor.com/image/gravity-soccer",
+    "game-id": "gravity-soccer",
+    "iframe": "https://hfmanor.com/gravity-soccer"
+  },
+  {
+    "name": "Ages Of Conflict",
+    "game_url": "https://hfmanor.com/ages-of-conflict",
+    "game_image_icon": "https://hfmanor.com/image/ages-of-conflict",
+    "game-id": "ages-of-conflict",
+    "iframe": "https://hfmanor.com/ages-of-conflict"
+  },
+  {
+    "name": "Riddleschool4",
+    "game_url": "https://hfmanor.com/riddleschool4",
+    "game_image_icon": "https://hfmanor.com/image/riddleschool4",
+    "game-id": "riddleschool4",
+    "iframe": "https://hfmanor.com/riddleschool4"
+  },
+  {
+    "name": "Adarkroom",
+    "game_url": "https://hfmanor.com/adarkroom",
+    "game_image_icon": "https://hfmanor.com/image/adarkroom",
+    "game-id": "adarkroom",
+    "iframe": "https://hfmanor.com/adarkroom"
+  },
+  {
+    "name": "Riddleschool3",
+    "game_url": "https://hfmanor.com/riddleschool3",
+    "game_image_icon": "https://hfmanor.com/image/riddleschool3",
+    "game-id": "riddleschool3",
+    "iframe": "https://hfmanor.com/riddleschool3"
+  },
+  {
+    "name": "Eggy Car",
+    "game_url": "https://hfmanor.com/eggy-car",
+    "game_image_icon": "https://hfmanor.com/image/eggy-car",
+    "game-id": "eggy-car",
+    "iframe": "https://hfmanor.com/eggy-car"
+  },
+  {
+    "name": "Yohoho",
+    "game_url": "https://hfmanor.com/yohoho",
+    "game_image_icon": "https://hfmanor.com/image/yohoho",
+    "game-id": "yohoho",
+    "iframe": "https://hfmanor.com/yohoho"
+  },
+  {
+    "name": "9007199254740992",
+    "game_url": "https://hfmanor.com/9007199254740992",
+    "game_image_icon": "https://hfmanor.com/image/9007199254740992",
+    "game-id": "9007199254740992",
+    "iframe": "https://hfmanor.com/9007199254740992"
+  },
+  {
+    "name": "Mindustry",
+    "game_url": "https://hfmanor.com/mindustry",
+    "game_image_icon": "https://hfmanor.com/image/mindustry",
+    "game-id": "mindustry",
+    "iframe": "https://hfmanor.com/mindustry"
+  },
+  {
+    "name": "2048 Multitask",
+    "game_url": "https://hfmanor.com/2048-multitask",
+    "game_image_icon": "https://hfmanor.com/image/2048-multitask",
+    "game-id": "2048-multitask",
+    "iframe": "https://hfmanor.com/2048-multitask"
+  },
+  {
+    "name": "Chill Radio",
+    "game_url": "https://hfmanor.com/chill-radio",
+    "game_image_icon": "https://hfmanor.com/image/chill-radio",
+    "game-id": "chill-radio",
+    "iframe": "https://hfmanor.com/chill-radio"
+  },
+  {
+    "name": "There Is No Game",
+    "game_url": "https://hfmanor.com/there-is-no-game",
+    "game_image_icon": "https://hfmanor.com/image/there-is-no-game",
+    "game-id": "there-is-no-game",
+    "iframe": "https://hfmanor.com/there-is-no-game"
+  },
+  {
+    "name": "Throwrocks",
+    "game_url": "https://hfmanor.com/throwrocks",
+    "game_image_icon": "https://hfmanor.com/image/throwrocks",
+    "game-id": "throwrocks",
+    "iframe": "https://hfmanor.com/throwrocks"
+  },
+  {
+    "name": "Ballistic Chickens",
+    "game_url": "https://hfmanor.com/ballistic-chickens",
+    "game_image_icon": "https://hfmanor.com/image/ballistic-chickens",
+    "game-id": "ballistic-chickens",
+    "iframe": "https://hfmanor.com/ballistic-chickens"
+  },
+  {
+    "name": "Linerider",
+    "game_url": "https://hfmanor.com/linerider",
+    "game_image_icon": "https://hfmanor.com/image/linerider",
+    "game-id": "linerider",
+    "iframe": "https://hfmanor.com/linerider"
+  },
+  {
+    "name": "Bigredbutton",
+    "game_url": "https://hfmanor.com/bigredbutton",
+    "game_image_icon": "https://hfmanor.com/image/bigredbutton",
+    "game-id": "bigredbutton",
+    "iframe": "https://hfmanor.com/bigredbutton"
+  },
+  {
+    "name": "Resent Client",
+    "game_url": "https://hfmanor.com/resent-client",
+    "game_image_icon": "https://hfmanor.com/image/resent-client",
+    "game-id": "resent-client",
+    "iframe": "https://hfmanor.com/resent-client"
+  },
+  {
+    "name": "Trimps",
+    "game_url": "https://hfmanor.com/Trimps",
+    "game_image_icon": "https://hfmanor.com/image/Trimps",
+    "game-id": "Trimps",
+    "iframe": "https://hfmanor.com/Trimps"
+  },
+  {
+    "name": "CMM Client",
+    "game_url": "https://hfmanor.com/CMM Client",
+    "game_image_icon": "https://hfmanor.com/image/CMM Client",
+    "game-id": "CMM Client",
+    "iframe": "https://hfmanor.com/CMM Client"
+  },
+  {
+    "name": "Plants vs zombies 1",
+    "game_url": "https://hfmanor.com/plants vs zombies 1",
+    "game_image_icon": "https://hfmanor.com/image/plants vs zombies 1",
+    "game-id": "plants vs zombies 1",
+    "iframe": "https://hfmanor.com/plants vs zombies 1"
+  },
+  {
+    "name": "Pandemic2",
+    "game_url": "https://hfmanor.com/pandemic2",
+    "game_image_icon": "https://hfmanor.com/image/pandemic2",
+    "game-id": "pandemic2",
+    "iframe": "https://hfmanor.com/pandemic2"
+  },
+  {
+    "name": "99balls",
+    "game_url": "https://hfmanor.com/99balls",
+    "game_image_icon": "https://hfmanor.com/image/99balls",
+    "game-id": "99balls",
+    "iframe": "https://hfmanor.com/99balls"
+  },
+  {
+    "name": "Yoshifabrication",
+    "game_url": "https://hfmanor.com/yoshifabrication",
+    "game_image_icon": "https://hfmanor.com/image/yoshifabrication",
+    "game-id": "yoshifabrication",
+    "iframe": "https://hfmanor.com/yoshifabrication"
+  },
+  {
+    "name": "Gimme The Airpod",
+    "game_url": "https://hfmanor.com/gimme-the-airpod",
+    "game_image_icon": "https://hfmanor.com/image/gimme-the-airpod",
+    "game-id": "gimme-the-airpod",
+    "iframe": "https://hfmanor.com/gimme-the-airpod"
+  },
+  {
+    "name": "ShapeShootout",
+    "game_url": "https://hfmanor.com/ShapeShootout",
+    "game_image_icon": "https://hfmanor.com/image/ShapeShootout",
+    "game-id": "ShapeShootout",
+    "iframe": "https://hfmanor.com/ShapeShootout"
+  },
+  {
+    "name": "Webretro",
+    "game_url": "https://hfmanor.com/webretro",
+    "game_image_icon": "https://hfmanor.com/image/webretro",
+    "game-id": "webretro",
+    "iframe": "https://hfmanor.com/webretro"
+  },
+  {
+    "name": "Breakingthebank",
+    "game_url": "https://hfmanor.com/breakingthebank",
+    "game_image_icon": "https://hfmanor.com/image/breakingthebank",
+    "game-id": "breakingthebank",
+    "iframe": "https://hfmanor.com/breakingthebank"
+  },
+  {
+    "name": "Protektor",
+    "game_url": "https://hfmanor.com/protektor",
+    "game_image_icon": "https://hfmanor.com/image/protektor",
+    "game-id": "protektor",
+    "iframe": "https://hfmanor.com/protektor"
+  },
+  {
+    "name": "Championarcher",
+    "game_url": "https://hfmanor.com/championarcher",
+    "game_image_icon": "https://hfmanor.com/image/championarcher",
+    "game-id": "championarcher",
+    "iframe": "https://hfmanor.com/championarcher"
+  },
+  {
+    "name": "Just One Boss",
+    "game_url": "https://hfmanor.com/just-one-boss",
+    "game_image_icon": "https://hfmanor.com/image/just-one-boss",
+    "game-id": "just-one-boss",
+    "iframe": "https://hfmanor.com/just-one-boss"
+  },
+  {
+    "name": "Blackknight",
+    "game_url": "https://hfmanor.com/blackknight",
+    "game_image_icon": "https://hfmanor.com/image/blackknight",
+    "game-id": "blackknight",
+    "iframe": "https://hfmanor.com/blackknight"
+  },
+  {
+    "name": "Slope Ball",
+    "game_url": "https://hfmanor.com/slope-ball",
+    "game_image_icon": "https://hfmanor.com/image/slope-ball",
+    "game-id": "slope-ball",
+    "iframe": "https://hfmanor.com/slope-ball"
+  },
+  {
+    "name": "Fake Virus",
+    "game_url": "https://hfmanor.com/fake-virus",
+    "game_image_icon": "https://hfmanor.com/image/fake-virus",
+    "game-id": "fake-virus",
+    "iframe": "https://hfmanor.com/fake-virus"
+  },
+  {
+    "name": "Fleeingthecomplex",
+    "game_url": "https://hfmanor.com/fleeingthecomplex",
+    "game_image_icon": "https://hfmanor.com/image/fleeingthecomplex",
+    "game-id": "fleeingthecomplex",
+    "iframe": "https://hfmanor.com/fleeingthecomplex"
+  },
+  {
+    "name": "Evil Glitch",
+    "game_url": "https://hfmanor.com/evil-glitch",
+    "game_image_icon": "https://hfmanor.com/image/evil-glitch",
+    "game-id": "evil-glitch",
+    "iframe": "https://hfmanor.com/evil-glitch"
+  },
+  {
+    "name": "Adventure Drivers",
+    "game_url": "https://hfmanor.com/adventure-drivers",
+    "game_image_icon": "https://hfmanor.com/image/adventure-drivers",
+    "game-id": "adventure-drivers",
+    "iframe": "https://hfmanor.com/adventure-drivers"
+  },
+  {
+    "name": "Battleforgondor",
+    "game_url": "https://hfmanor.com/battleforgondor",
+    "game_image_icon": "https://hfmanor.com/image/battleforgondor",
+    "game-id": "battleforgondor",
+    "iframe": "https://hfmanor.com/battleforgondor"
+  },
+  {
+    "name": "Sleepingbeauty",
+    "game_url": "https://hfmanor.com/sleepingbeauty",
+    "game_image_icon": "https://hfmanor.com/image/sleepingbeauty",
+    "game-id": "sleepingbeauty",
+    "iframe": "https://hfmanor.com/sleepingbeauty"
+  },
+  {
+    "name": "Papaspizzaria",
+    "game_url": "https://hfmanor.com/papaspizzaria",
+    "game_image_icon": "https://hfmanor.com/image/papaspizzaria",
+    "game-id": "papaspizzaria",
+    "iframe": "https://hfmanor.com/papaspizzaria"
+  },
+  {
+    "name": "Spinningrat",
+    "game_url": "https://hfmanor.com/spinningrat",
+    "game_image_icon": "https://hfmanor.com/image/spinningrat",
+    "game-id": "spinningrat",
+    "iframe": "https://hfmanor.com/spinningrat"
+  },
+  {
+    "name": "Ruffle",
+    "game_url": "https://hfmanor.com/ruffle",
+    "game_image_icon": "https://hfmanor.com/image/ruffle",
+    "game-id": "ruffle",
+    "iframe": "https://hfmanor.com/ruffle"
+  },
+  {
+    "name": "Mineblocks",
+    "game_url": "https://hfmanor.com/mineblocks",
+    "game_image_icon": "https://hfmanor.com/image/mineblocks",
+    "game-id": "mineblocks",
+    "iframe": "https://hfmanor.com/mineblocks"
+  },
+  {
+    "name": "Nsresurgence",
+    "game_url": "https://hfmanor.com/nsresurgence",
+    "game_image_icon": "https://hfmanor.com/image/nsresurgence",
+    "game-id": "nsresurgence",
+    "iframe": "https://hfmanor.com/nsresurgence"
+  },
+  {
+    "name": "Bad Ice Cream",
+    "game_url": "https://hfmanor.com/bad-ice-cream",
+    "game_image_icon": "https://hfmanor.com/image/bad-ice-cream",
+    "game-id": "bad-ice-cream",
+    "iframe": "https://hfmanor.com/bad-ice-cream"
+  },
+  {
+    "name": "Hba",
+    "game_url": "https://hfmanor.com/hba",
+    "game_image_icon": "https://hfmanor.com/image/hba",
+    "game-id": "hba",
+    "iframe": "https://hfmanor.com/hba"
+  },
+  {
+    "name": "Froggys Battle",
+    "game_url": "https://hfmanor.com/froggys-battle",
+    "game_image_icon": "https://hfmanor.com/image/froggys-battle",
+    "game-id": "froggys-battle",
+    "iframe": "https://hfmanor.com/froggys-battle"
+  },
+  {
+    "name": "Scooperia",
+    "game_url": "https://hfmanor.com/scooperia",
+    "game_image_icon": "https://hfmanor.com/image/scooperia",
+    "game-id": "scooperia",
+    "iframe": "https://hfmanor.com/scooperia"
+  },
+  {
+    "name": "Sand Game",
+    "game_url": "https://hfmanor.com/sand-game",
+    "game_image_icon": "https://hfmanor.com/image/sand-game",
+    "game-id": "sand-game",
+    "iframe": "https://hfmanor.com/sand-game"
+  },
+  {
+    "name": "DogeMiner",
+    "game_url": "https://hfmanor.com/DogeMiner",
+    "game_image_icon": "https://hfmanor.com/image/DogeMiner",
+    "game-id": "DogeMiner",
+    "iframe": "https://hfmanor.com/DogeMiner"
+  },
+  {
+    "name": "Achievementunlocked",
+    "game_url": "https://hfmanor.com/achievementunlocked",
+    "game_image_icon": "https://hfmanor.com/image/achievementunlocked",
+    "game-id": "achievementunlocked",
+    "iframe": "https://hfmanor.com/achievementunlocked"
+  },
+  {
+    "name": "Ltf Idle",
+    "game_url": "https://hfmanor.com/ltf-idle",
+    "game_image_icon": "https://hfmanor.com/image/ltf-idle",
+    "game-id": "ltf-idle",
+    "iframe": "https://hfmanor.com/ltf-idle"
+  },
+  {
+    "name": "Iceagebaby2",
+    "game_url": "https://hfmanor.com/iceagebaby2",
+    "game_image_icon": "https://hfmanor.com/image/iceagebaby2",
+    "game-id": "iceagebaby2",
+    "iframe": "https://hfmanor.com/iceagebaby2"
+  },
+  {
+    "name": "Osu!",
+    "game_url": "https://hfmanor.com/osu!",
+    "game_image_icon": "https://hfmanor.com/image/osu!",
+    "game-id": "osu!",
+    "iframe": "https://hfmanor.com/osu!"
+  },
+  {
+    "name": "Flappy Bird",
+    "game_url": "https://hfmanor.com/flappy-bird",
+    "game_image_icon": "https://hfmanor.com/image/flappy-bird",
+    "game-id": "flappy-bird",
+    "iframe": "https://hfmanor.com/flappy-bird"
+  },
+  {
+    "name": "Veloce",
+    "game_url": "https://hfmanor.com/veloce",
+    "game_image_icon": "https://hfmanor.com/image/veloce",
+    "game-id": "veloce",
+    "iframe": "https://hfmanor.com/veloce"
+  },
+  {
+    "name": "Geojump",
+    "game_url": "https://hfmanor.com/geojump",
+    "game_image_icon": "https://hfmanor.com/image/geojump",
+    "game-id": "geojump",
+    "iframe": "https://hfmanor.com/geojump"
+  },
+  {
+    "name": "Geoneondash",
+    "game_url": "https://hfmanor.com/geoneondash",
+    "game_image_icon": "https://hfmanor.com/image/geoneondash",
+    "game-id": "geoneondash",
+    "iframe": "https://hfmanor.com/geoneondash"
+  },
+  {
+    "name": "Poom",
+    "game_url": "https://hfmanor.com/poom",
+    "game_image_icon": "https://hfmanor.com/image/poom",
+    "game-id": "poom",
+    "iframe": "https://hfmanor.com/poom"
+  },
+  {
+    "name": "Idledices",
+    "game_url": "https://hfmanor.com/idledices",
+    "game_image_icon": "https://hfmanor.com/image/idledices",
+    "game-id": "idledices",
+    "iframe": "https://hfmanor.com/idledices"
+  },
+  {
+    "name": "Shuttledeck",
+    "game_url": "https://hfmanor.com/shuttledeck",
+    "game_image_icon": "https://hfmanor.com/image/shuttledeck",
+    "game-id": "shuttledeck",
+    "iframe": "https://hfmanor.com/shuttledeck"
+  },
+  {
+    "name": "1v1space",
+    "game_url": "https://hfmanor.com/1v1space",
+    "game_image_icon": "https://hfmanor.com/image/1v1space",
+    "game-id": "1v1space",
+    "iframe": "https://hfmanor.com/1v1space"
+  },
+  {
+    "name": "Superfowlist",
+    "game_url": "https://hfmanor.com/superfowlist",
+    "game_image_icon": "https://hfmanor.com/image/superfowlist",
+    "game-id": "superfowlist",
+    "iframe": "https://hfmanor.com/superfowlist"
+  },
+  {
+    "name": "Game Inside",
+    "game_url": "https://hfmanor.com/game-inside",
+    "game_image_icon": "https://hfmanor.com/image/game-inside",
+    "game-id": "game-inside",
+    "iframe": "https://hfmanor.com/game-inside"
+  },
+  {
+    "name": "Angelunder",
+    "game_url": "https://hfmanor.com/angelunder",
+    "game_image_icon": "https://hfmanor.com/image/angelunder",
+    "game-id": "angelunder",
+    "iframe": "https://hfmanor.com/angelunder"
+  },
+  {
+    "name": "Geodashlite",
+    "game_url": "https://hfmanor.com/geodashlite",
+    "game_image_icon": "https://hfmanor.com/image/geodashlite",
+    "game-id": "geodashlite",
+    "iframe": "https://hfmanor.com/geodashlite"
+  },
+  {
+    "name": "Dune",
+    "game_url": "https://hfmanor.com/dune",
+    "game_image_icon": "https://hfmanor.com/image/dune",
+    "game-id": "dune",
+    "iframe": "https://hfmanor.com/dune"
+  },
+  {
+    "name": "Spill It",
+    "game_url": "https://hfmanor.com/spill-it",
+    "game_image_icon": "https://hfmanor.com/image/spill-it",
+    "game-id": "spill-it",
+    "iframe": "https://hfmanor.com/spill-it"
+  },
+  {
+    "name": "Happy Glass 1",
+    "game_url": "https://hfmanor.com/happy-glass-1",
+    "game_image_icon": "https://hfmanor.com/image/happy-glass-1",
+    "game-id": "happy-glass-1",
+    "iframe": "https://hfmanor.com/happy-glass-1"
+  },
+  {
+    "name": "Dreadhead Parkout",
+    "game_url": "https://hfmanor.com/dreadhead-parkout",
+    "game_image_icon": "https://hfmanor.com/image/dreadhead-parkout",
+    "game-id": "dreadhead-parkout",
+    "iframe": "https://hfmanor.com/dreadhead-parkout"
+  },
+  {
+    "name": "Route Digger",
+    "game_url": "https://hfmanor.com/route-digger",
+    "game_image_icon": "https://hfmanor.com/image/route-digger",
+    "game-id": "route-digger",
+    "iframe": "https://hfmanor.com/route-digger"
+  }
+]
